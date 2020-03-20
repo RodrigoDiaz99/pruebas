@@ -14,7 +14,8 @@
 
   <!-- Custom fonts for this template -->
   <link href="" rel="stylesheet">
-  <link href="../.../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <!--<link href="../.../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">-->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
@@ -284,8 +285,8 @@
       </footer>
 
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="/vendor/jquery/jquery.min.js"></script>
+      <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </div>
         </div>
     </body>
