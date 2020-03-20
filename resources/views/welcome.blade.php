@@ -19,8 +19,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <!--<link href="css/landing-page.min.css" rel="stylesheet">
-        <style>
+  <link href="/resources/css/landing-page.min.css" rel="stylesheet">
+       <!-- <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
