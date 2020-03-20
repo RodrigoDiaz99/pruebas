@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/landing-page.min.css" rel="stylesheet">
+  <!--<link href="css/landing-page.min.css" rel="stylesheet">
         <style>
             html, body {
                 background-color: #fff;
@@ -70,7 +70,7 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+        </style>-->
     </head>
     <body>
         <div class="flex-center position-ref full-height">
