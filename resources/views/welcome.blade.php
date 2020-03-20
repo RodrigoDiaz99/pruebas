@@ -7,10 +7,14 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="{{asset('.../../../../vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+      <link href="{{asset('../../vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+
+      <link href="{{asset('.../../../../vendor/simple-line-icons/css/simple-line-icons.css')}}" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{asset('.../../../../vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="" rel="stylesheet">
@@ -285,8 +289,10 @@
       </footer>
 
       <!-- Bootstrap core JavaScript -->
-      <script src="{{asset('/vendor/jquery/jquery.min.js')}}"></script>
-      <script src="{{asset('/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+      <script src="{{asset('../../vendor/jquery/jquery.min.js')}}"></script>
+
+      <script src="{{asset('../../vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
 </div>
         </div>
     </body>
