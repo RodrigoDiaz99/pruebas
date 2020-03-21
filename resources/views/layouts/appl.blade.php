@@ -15,6 +15,10 @@
 
     <!-- Theme CSS -->
     <link href="{{asset('css/freelancer.min.css')}}" rel="stylesheet">
+    <style>
+
+    </style>
+
 
   </head>
 
