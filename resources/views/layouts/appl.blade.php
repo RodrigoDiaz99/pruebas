@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="{{ asset('css/freelancer.min.css') }}" rel="stylesheet">
+    <link href="{{asset('css/freelancer.min.css')}}" rel="stylesheet">
 
   </head>
 
@@ -33,7 +33,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="{{ asset('js/freelancer.min.js') }}"></script>
-
+    <main class="py-4">
+        @yield('content')
+    </main>
   </body>
 
   </html>
