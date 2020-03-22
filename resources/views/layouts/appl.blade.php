@@ -15,15 +15,6 @@
 
     <!-- Theme CSS -->
     <link href="{{asset('css/freelancer.min.css')}}" rel="stylesheet">
-    <style>
-
-    </style>
-
-
-  </head>
-
-  <body id="page-top">
-
     <!-- Bootstrap core JavaScript -->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -37,6 +28,16 @@
 
     <!-- Custom scripts for this template -->
     <script src="{{ asset('js/freelancer.min.js') }}"></script>
+   <style>
+
+    </style>
+
+
+  </head>
+
+  <body id="page-top">
+
+
     <main class="py-4">
         @yield('content')
     </main>
