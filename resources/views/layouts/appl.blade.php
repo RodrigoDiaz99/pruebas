@@ -133,7 +133,7 @@
                     </div>
                     <div class="col-lg-4 mr-auto text-center">
                         <i class="fas fa-envelope fa-3x mb-3 text-muted"></i
-                        ><!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block" href="mailto:contact@yourwebsite.com"><andre_drgirl@hotmail class="com"></andre_drgirl@hotmail></a>
+                        ><!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block" href="mailto:andre_drgirl@hotmail.com">andre_drgirl@hotmail.com</a>
                     </div>
                 </div>
             </div>
