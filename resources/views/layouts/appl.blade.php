@@ -35,7 +35,7 @@
                             @if (Route::has('log'))
                                 <div class="flex-center position-ref full-height">
                                     @auth
-                                    <a class="nav-link js-scroll-trigger" href="{{ url('/') }}"></a>
+                                    <a class="nav-link js-scroll-trigger" href="{{ url('/home') }}"></a>
 
                                     @else
                                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('log') }}">Acceso</a></li>
