@@ -33,13 +33,11 @@
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                             @if (Route::has('login'))
-                                <div class="top-right links">
+                                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">
                                     @auth
                                         <a href="{{ url('/home') }}">Home</a>
                                     @else
                                         <a href="{{ route('login') }}">Login</a>
-
-
                                     @endauth
                                 </div>
                             @endif
