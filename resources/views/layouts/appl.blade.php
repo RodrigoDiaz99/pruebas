@@ -38,7 +38,7 @@
                                     <a class="nav-link js-scroll-trigger" href="{{ url('/principal') }}">Home</a>
 
                                     @else
-                                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('login2') }}">Acceso</a></li>
+                                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('login') }}">Acceso</a></li>
 
                                     @endauth
                                 </div>
