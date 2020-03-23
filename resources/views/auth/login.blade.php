@@ -115,9 +115,7 @@ margin-left: 4px;
 			<div class="card-header">
 				<h3>Sign In</h3>
 				<div class="d-flex justify-content-end social_icon">
-					<span><i class="fab fa-facebook-square"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
-					<span><i class="fab fa-twitter-square"></i></span>
+
 				</div>
 			</div>
 			<div class="card-body">
@@ -144,12 +142,8 @@ margin-left: 4px;
 				</form>
 			</div>
 			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="#">Sign Up</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Forgot your password?</a>
-				</div>
+
+
 			</div>
 		</div>
 	</div>
