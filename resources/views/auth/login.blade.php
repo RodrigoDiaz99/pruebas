@@ -46,12 +46,13 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
                                 <div class="form-check">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
+                                    <div class="row align-items-center remember">
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
