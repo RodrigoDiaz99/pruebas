@@ -33,7 +33,7 @@
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
                             @if (Route::has('login'))
-                                <div>
+                                <div class="">
                                     @auth
                                     <a class="nav-link js-scroll-trigger" href="{{ url('/home') }}">Home</a>
 
