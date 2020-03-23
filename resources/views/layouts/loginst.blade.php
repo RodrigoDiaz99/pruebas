@@ -21,6 +21,9 @@
     height: 100%;
     font-family: 'Numans', sans-serif;
     }
+    script src="{{ asset('js/app.js') }}" defer></script>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     .container{
     height: 100%;
