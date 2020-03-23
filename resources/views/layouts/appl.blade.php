@@ -58,7 +58,7 @@
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+                        <p class="text-white-75 font-weight-light mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tempora expedita aut ea assumenda libero ipsam nulla doloremque, impedit obcaecati repellat iusto dolor officia, nesciunt veritatis cum dignissimos voluptates accusantium.</p>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Encuentra Más</a>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">Tenemos lo que necesitas</h2>
                         <hr class="divider light my-4" />
-                        <p class="text-white-50 mb-4">Herramientas para cuidar tu vagina</p>
+                        <p class="text-white-50 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id at cumque necessitatibus ea porro nulla itaque cupiditate, praesentium ullam aperiam eaque beatae provident fugit quis nemo magni sed totam officiis.</p>
                         <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Comenzemos!</a>
                     </div>
                 </div>
@@ -80,35 +80,35 @@
         <!-- Services section-->
         <section class="page-section" id="services">
             <div class="container">
-                <h2 class="text-center mt-0">At Your Service</h2>
+                <h2 class="text-center mt-0">A tu servicio</h2>
                 <hr class="divider my-4" />
                 <div class="row">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Sturdy Themes</h3>
-                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                            <h3 class="h4 mb-2">Ginecologia</h3>
+                            <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem velit sunt cupiditate sapiente alias maiores nulla, ipsa, nesciunt dolores reiciendis accusamus animi eaque, ratione ipsam in doloremque possimus neque.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Up to Date</h3>
-                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                            <h3 class="h4 mb-2">Papanicolau</h3>
+                            <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium quia quas animi veniam recusandae neque sit, nihil quis voluptatum aperiam nulla saepe eveniet natus sed impedit? Minima, nostrum blanditiis.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
-                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                            <h3 class="h4 mb-2">Obstétricas</h3>
+                            <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quam soluta tempore fuga doloremque architecto sint tempora quisquam, aliquam, rem dignissimos molestiae amet in repellendus ex porro magni minima. In?</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Made with Love</h3>
-                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                            <h3 class="h4 mb-2">Embarazadas</h3>
+                            <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quia? Incidunt ut molestias debitis tenetur nihil eaque libero ipsam, autem maxime? Tempora provident fuga quia ullam ea minima, nesciunt quaerat!</p>
                         </div>
                     </div>
                 </div>
