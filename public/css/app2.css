@@ -30,7 +30,6 @@ body {
 }
 
 .input-group-prepend span {
-    width: 50px;
     background-color: #FFC312;
     color: black;
     border: 0 !important;
