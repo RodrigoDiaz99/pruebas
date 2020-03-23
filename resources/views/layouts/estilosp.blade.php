@@ -29,7 +29,7 @@
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portafolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
                     @if (Route::has('login'))
                     <div class="flex-center position-ref full-height">
