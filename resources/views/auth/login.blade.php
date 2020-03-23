@@ -47,21 +47,20 @@
                         </div>
 
                         <div class="input-group form-group">
-                            <div class="input-group-prepend">
+                            <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
-                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <div class="row align-items-center remember">
+                                    <label class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="form-group">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" value="Login" class="btn float-right login_btn">
                                     {{ __('Login') }}
                                 </button>
 
