@@ -32,13 +32,13 @@
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
-                            @if (Route::has('log'))
+                            @if (Route::has('login'))
                                 <div class="flex-center position-ref full-height">
                                     @auth
-                                    <a class="nav-link js-scroll-trigger" href="{{ url('/') }}"></a>
+                                    <a class="nav-link js-scroll-trigger" href="{{ url('/home') }}"></a>
 
                                     @else
-                                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('log') }}">Acceso</a></li>
+                                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('login') }}">Acceso</a></li>
 
                                     @endauth
                                 </div>
