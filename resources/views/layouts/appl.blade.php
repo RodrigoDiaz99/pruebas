@@ -72,7 +72,7 @@
                         <h2 class="text-white mt-0">Tenemos lo que necesitas</h2>
                         <hr class="divider light my-4" />
                         <p class="text-white-50 mb-4">Herramientas para cuidar tu vagina</p>
-                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Comenzemos!</a>
                     </div>
                 </div>
             </div>
