@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Carmen Andrea Reyes Reyes - Dashboard</title>
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/hmyqulmkc/image/upload/v1585007390/icon_dwqmji.png" />
+    <!--<link rel="icon" type="image/png" href="https://res.cloudinary.com/hmyqulmkc/image/upload/v1585007390/icon_dwqmji.png" />-->
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
