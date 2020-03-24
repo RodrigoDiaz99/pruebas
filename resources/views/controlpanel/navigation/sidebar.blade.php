@@ -76,11 +76,10 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/widgets.html" class="nav-link">
-                                    <i class="nav-icon fas fa-th"></i>
+                                <a href="/pacientes" class="nav-link">
+                                    <i class="nav-icon fas fa-table"></i>
                                     <p>
-                                        Widgets
-                                        <span class="right badge badge-danger">New</span>
+                                        Lista de pacientes
                                     </p>
                                 </a>
                             </li>
@@ -570,7 +569,6 @@
         </div>
         <!-- /.sidebar -->
     </aside>
-
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->

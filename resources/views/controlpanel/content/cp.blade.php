@@ -31,9 +31,6 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
-   
-
-
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
