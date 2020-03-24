@@ -30,3 +30,7 @@ Route::get('/pacientes', function () {
 Route::get('/registro-paciente', function () {
     return view('registerp');
 });
+
+Route::get('/citas', function () {
+    return view('citas');
+});

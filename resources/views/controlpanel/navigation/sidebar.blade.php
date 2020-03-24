@@ -63,17 +63,12 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="./index.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Agendar citas</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./index2.html" class="nav-link">
+                                <a href="/citas" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Control de citas</p>
                                 </a>
                             </li>
+                            
                         </ul>
                     </li>
 
@@ -87,13 +82,13 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                            <a href="/pacientes" class="nav-link">
+                            <a href="/registro-paciente" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Registrar paciente</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="/registro-paciente" class="nav-link">
+                                <a href="/pacientes" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Lista de paciente</p>
                                 </a>
