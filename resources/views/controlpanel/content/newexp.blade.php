@@ -18,13 +18,13 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="Karen Elizabeth" readonly>
+                            <input type="text" class="form-control" value="Karen Elizabeth" >
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Apellido paterno</label>
-                            <input type="text" class="form-control" value="Ayala" readonly>
+                            <input type="text" class="form-control" value="Ayala" >
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Apellido materno</label>
-                            <input type="text" class="form-control" value="Valladares" readonly>
+                            <input type="text" class="form-control" value="Valladares" >
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -42,7 +42,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                 </div>
-                                <input type="text" class="form-control" readonly value="04/06/1998" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                <input type="text" class="form-control"  value="04/06/1998" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                             </div>
                         </div>
                         <!-- /.input group -->
@@ -55,7 +55,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                 </div>
-                                <input type="text" value="9992556950" readonly class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
+                                <input type="text" value="9992556950"  class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -64,7 +64,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Estado</label>
-                            <select readonly class="form-control" style="width: max-content;">
+                            <select  class="form-control" style="width: max-content;">
                                 <option selected="selected">Yucatán</option>
                                 <option>Alaskaguamas</option>
                             </select>
@@ -74,14 +74,14 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Antecedentes</label>
-                            <input type="text" value="Alergias, hipertensión" readonly class="form-control" placeholder="Antecedentes">
+                            <input type="text" value="Alergias, hipertensión"  class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
                             <label>Peso</label>
-                            <input type="text" value="9999kg" readonly class="form-control" placeholder="Antecedentes">
+                            <input type="text" value="9999kg"  class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
 
@@ -89,7 +89,7 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Estatura</label>
-                            <input type="text" value="1.99m" readonly class="form-control" placeholder="Antecedentes">
+                            <input type="text" value="1.99m"  class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -108,7 +108,7 @@
                     <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
-                            <button type=" " class="btn btn-danger">Cerrar expediente</button>
+                            <button type=" " class="btn btn-danger">Cancelar</button>
                         </div>
                     </div>
                 </div>

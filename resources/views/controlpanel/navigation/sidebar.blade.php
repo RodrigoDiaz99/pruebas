@@ -96,14 +96,36 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="/expediente" class="nav-link">
+                    <li class="nav-item has-treeview menu-open">
+                        <a href="#" class="nav-link">
                             <i class="nav-icon far fa-edit"></i>
                             <p>
-                                Expediente
+                                Expedientes
+                                <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/apertura-expediente" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>
+                                        Apertura Expediente
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/consulta-expediente" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>
+                                        Consulta Expediente
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
+
+
+
 
                 </ul>
             </nav>
