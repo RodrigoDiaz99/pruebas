@@ -92,12 +92,7 @@
                                     <p>Registrar paciente</p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="/pacientes" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Lista de paciente</p>
-                                </a>
-                            </li>
+                             
                         </ul>
                     </li>
 
