@@ -70,7 +70,7 @@
                             </li> <li class="nav-item">
                                 <a href="/calendario-analisis" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Análsis</p>
+                                    <p>Análisis</p>
                                 </a>
                             </li>
 
