@@ -31,7 +31,10 @@ Route::get('/registro-paciente', function () {
     return view('registerp');
 });
 
-Route::get('/citas', function () {
+Route::get('/calendario-citas', function () {
+    return view('citas');
+});
+Route::get('/calendario-analisis', function () {
     return view('citas');
 });
 Route::get('/apertura-expediente', function () {

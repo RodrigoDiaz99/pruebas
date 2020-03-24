@@ -62,10 +62,15 @@
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="/citas" class="nav-link">
+                        <li class="nav-item">
+                                <a href="/calendario-citas" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Control de citas</p>
+                                    <p>Citas</p>
+                                </a>
+                            </li> <li class="nav-item">
+                                <a href="/calendario-analisis" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Análsis</p>
                                 </a>
                             </li>
 
