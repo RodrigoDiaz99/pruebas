@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
-
 <body class="hold-transition sidebar-mini">
     <div class="content-wrapper">
         <div class="card card-primary">
@@ -18,13 +16,13 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="Karen Elizabeth" >
+                            <input type="text" class="form-control" value="Karen Elizabeth">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Apellido paterno</label>
-                            <input type="text" class="form-control" value="Ayala" >
+                            <input type="text" class="form-control" value="Ayala">
                         </div>
                     </div>
                 </div>
@@ -32,7 +30,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Apellido materno</label>
-                            <input type="text" class="form-control" value="Valladares" >
+                            <input type="text" class="form-control" value="Valladares">
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -42,7 +40,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                 </div>
-                                <input type="text" class="form-control"  value="04/06/1998" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                <input type="text" class="form-control" value="04/06/1998" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                             </div>
                         </div>
                         <!-- /.input group -->
@@ -55,7 +53,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                 </div>
-                                <input type="text" value="9992556950"  class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
+                                <input type="text" value="9992556950" class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -64,7 +62,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Estado</label>
-                            <select  class="form-control" style="width: max-content;">
+                            <select class="form-control" style="width: max-content;">
                                 <option selected="selected">Yucatán</option>
                                 <option>Alaskaguamas</option>
                             </select>
@@ -74,42 +72,157 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Antecedentes</label>
-                            <input type="text" value="Alergias, hipertensión"  class="form-control" placeholder="Antecedentes">
+                            <input type="text" value="Alergias, hipertensión" class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
                             <label>Peso</label>
-                            <input type="text" value="9999kg"  class="form-control" placeholder="Antecedentes">
+                            <input type="text" value="9999kg" class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
-
                     <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
                             <label>Estatura</label>
-                            <input type="text" value="1.99m"  class="form-control" placeholder="Antecedentes">
+                            <input type="text" value="1.99m" class="form-control" placeholder="Antecedentes">
+                        </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                         <div class="form-group">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                            <button type=" " class="btn btn-primary">Ver historial</button>
-                            <button type=" " class="btn btn-primary">Ver estudios del paciente</button>
-                            <button type=" " class="btn btn-primary">Ver colposcopías</button>
+                    <div class="row">
 
+                    <div class="col-sm-6">
+                        <div class="form-group clearfix">
+                            <label for="radioPrimary3">
+                                Diabetes
+                            </label>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary1" name="r1" checked>
+                                <label for="radioPrimary1"> Sí
+                                </label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary2" name="r1">
+                                <label for="radioPrimary2">No
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                            <button type=" " class="btn btn-danger">Cancelar</button>
+                        <div class="form-group clearfix">
+                            <label for="radioPrimary3">
+                                TB Pulmonar
+                            </label>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary1" name="r1" checked>
+                                <label for="radioPrimary1"> Sí
+                                </label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary2" name="r1">
+                                <label for="radioPrimary2">No
+                                </label>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group clearfix">
+                            <label for="radioPrimary3">
+                                Interv. Quirúrgica
+                            </label>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary1" name="r1" checked>
+                                <label for="radioPrimary1"> Sí
+                                </label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary2" name="r1">
+                                <label for="radioPrimary2">No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group clearfix">
+                            <label for="radioPrimary3">
+                                Patol. Psiquiátrica
+                            </label>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary1" name="r1" checked>
+                                <label for="radioPrimary1"> Sí
+                                </label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary2" name="r1">
+                                <label for="radioPrimary2">No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group clearfix">
+                            <label for="radioPrimary3">
+Convulsiones                            </label>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary1" name="r1" checked>
+                                <label for="radioPrimary1"> Sí
+                                </label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary2" name="r1">
+                                <label for="radioPrimary2">No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group clearfix">
+                            <label for="radioPrimary3">
+                                Otros (Especifíque)
+                            </label>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary1" name="r1" checked>
+                                <label for="radioPrimary1"> Sí
+                                </label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary2" name="r1">
+                                <label for="radioPrimary2">No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group clearfix">
+                            <label for="radioPrimary3">
+                                Lueticas
+                            </label>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary1" name="r1" checked>
+                                <label for="radioPrimary1"> Sí
+                                </label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input type="radio" id="radioPrimary2" name="r1">
+                                <label for="radioPrimary2">No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <button type=" " class="btn btn-primary">Ver historial</button>
+                        <button type=" " class="btn btn-primary">Ver estudios del paciente</button>
+                        <button type=" " class="btn btn-primary">Ver colposcopías</button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <button type=" " class="btn btn-danger">Cancelar</button>
                     </div>
                 </div>
                 <!-- /.card-body -->
@@ -183,5 +296,4 @@
         })
     </script>
 </body>
-
 </html>
