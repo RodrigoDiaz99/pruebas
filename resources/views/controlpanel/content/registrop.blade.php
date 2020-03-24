@@ -9,7 +9,7 @@
 
 <body class="hold-transition sidebar-mini">
     <div class="content-wrapper">
-        <div class="card card-danger">
+        <div class="card card-primary">
             <div class="card-header">
                 <h3 class="card-title">Registro de paciente</h3>
             </div>
@@ -71,6 +71,13 @@
                                 <option selected="selected">Mérida</option>
                                 <option>Alaskaguamas</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- text input -->
+                        <div class="form-group">
+                            <button type=" " class="btn btn-success">Agregar paciente</button>
+                            <button type=" " class="btn btn-danger">Limpiar datos</button>
                         </div>
                     </div>
                 </div>

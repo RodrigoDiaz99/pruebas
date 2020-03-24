@@ -8,7 +8,7 @@
 
 <body class="hold-transition sidebar-mini">
     <div class="content-wrapper">
-        <div class="card card-danger">
+        <div class="card card-primary">
             <div class="card-header">
                 <h3 class="card-title">Datos de paciente</h3>
             </div>
@@ -84,32 +84,38 @@
                             <input type="text" value="9999kg" readonly class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-6">
-                             <!-- text input -->
-                            <div class="form-group">
-                                <label>Estatura</label>
-                                <input type="text" value="1.99m" readonly class="form-control" placeholder="Antecedentes">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <!-- text input -->
-                            <div class="form-group">
-                                <button type=" " class="btn btn-primary">Ver historial</button>
-                                <button type=" " class="btn btn-primary">Ver estudios del paciente</button>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <!-- text input -->
-                            <div class="form-group">
-                                <button type=" " class="btn btn-danger">Cerrar expediente</button>
-                            </div>
+                        <!-- text input -->
+                        <div class="form-group">
+                            <label>Estatura</label>
+                            <input type="text" value="1.99m" readonly class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
-                    <!-- /.card-body -->
+                    <div class="col-sm-6">
+                         <div class="form-group">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- text input -->
+                        <div class="form-group">
+                            <button type=" " class="btn btn-primary">Ver historial</button>
+                            <button type=" " class="btn btn-primary">Ver estudios del paciente</button>
+                            <button type=" " class="btn btn-primary">Ver colposcopías</button>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- text input -->
+                        <div class="form-group">
+                            <button type=" " class="btn btn-danger">Cerrar expediente</button>
+                        </div>
+                    </div>
                 </div>
+                <!-- /.card-body -->
             </div>
         </div>
+    </div>
     </div>
     <!-- /.card -->
     <!-- Page script -->

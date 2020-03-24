@@ -67,6 +67,7 @@
                                     </tfoot>
                                 </table>
                             </div>
+                            
                             <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
@@ -86,7 +87,7 @@
             reserved.
         </footer>
         <!-- Control Sidebar -->
-       
+
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
