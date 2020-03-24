@@ -87,7 +87,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="/pacientes" class="nav-link">
+                            <a href="/pacientes" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Registrar paciente</p>
                                 </a>
