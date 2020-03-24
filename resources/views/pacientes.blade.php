@@ -1,4 +1,3 @@
-@extends('controlpanel.navbar')
-
-@extends('controlpanel.sidebar')
-@extends('controlpanel.pacientes')
+@include('controlpanel.navigation.navbar')
+@include('controlpanel.navigation.sidebar')
+@extends('controlpanel.content.pacientes')

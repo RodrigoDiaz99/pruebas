@@ -31,6 +31,7 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
+<<<<<<< HEAD
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <!-- Left navbar links -->
@@ -152,6 +153,9 @@
     </nav>
 
 
+=======
+   
+>>>>>>> 8d8c918fd129c1e668d64e052d8b665a45ca1cff
 
 
     <!-- Content Wrapper. Contains page content -->

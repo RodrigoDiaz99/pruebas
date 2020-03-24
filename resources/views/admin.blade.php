@@ -1,2 +1,3 @@
-@extends('controlpanel.navbar')
-@extends('controlpanel.cp')
+@include('controlpanel.navigation.navbar')
+@include('controlpanel.navigation.sidebar')
+@extends('controlpanel.content.cp')
