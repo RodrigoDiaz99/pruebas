@@ -94,6 +94,15 @@
                                 <input type="text" value="1.99m" class="form-control" placeholder="Antecedentes">
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Categoría</label>
+                                <select class="form-control" style="width: max-content;">
+                                    <option selected="selected">Embarazo</option>
+                                    <option>Embarazos</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
 
