@@ -26,3 +26,7 @@ Route::get('/admin', function () {
 Route::get('/pacientes', function () {
     return view('pacientes');
 });
+
+Route::get('/registro-paciente', function () {
+    return view('registerp');
+});
