@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <!-- Tell the browser to be responsive to screen width -->
+    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -55,7 +55,7 @@
                with font-awesome or any other icon font library -->
                     <li class="nav-item has-treeview menu-open">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon  far fa-calendar-alt"></i>
                             <p>
                                 Citas
                                 <i class="right fas fa-angle-left"></i>
@@ -68,13 +68,13 @@
                                     <p>Control de citas</p>
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </li>
 
                     <li class="nav-item has-treeview menu-open">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon fas fa-female"></i>
                             <p>
                                 Pacientes
                                 <i class="right fas fa-angle-left"></i>
@@ -82,7 +82,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                            <a href="/registro-paciente" class="nav-link">
+                                <a href="/registro-paciente" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Registrar paciente</p>
                                 </a>
@@ -95,7 +95,7 @@
                             </li>
                         </ul>
                     </li>
- 
+
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-copy"></i>
@@ -581,7 +581,16 @@
             <!-- /.sidebar-menu -->
         </div>
         <!-- /.sidebar -->
-    </aside>
+    </aside><!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js"></script>
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
