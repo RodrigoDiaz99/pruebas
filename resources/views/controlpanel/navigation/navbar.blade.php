@@ -42,11 +42,6 @@
                 <a href="{{ url('/admin') }}" class="nav-link">Inicio</a>
             </li>
         </ul>
-<<<<<<< HEAD
-         
-         
-        </ul> 
-=======
         <!-- SEARCH FORM -->
         <!-- Notifications Dropdown Menu -->
         <li class="nav-item dropdown">
@@ -81,7 +76,6 @@
             </a>
         </li>
         </ul>
->>>>>>> 48a589819c6f8f0b330d8a48b060904e2e906c46
     </nav>
     <!-- /.navbar -->
     <!-- jQuery -->
