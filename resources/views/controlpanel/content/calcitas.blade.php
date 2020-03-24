@@ -61,8 +61,7 @@
                       <div class="external-event bg-success">Kenn Ayala</div>
                       <div class="external-event bg-warning">Karen López</div>
                       <div class="external-event bg-info">Rodrigo Díaz</div>
-                      <div class="external-event bg-primary">Otro vato</div>
-                      <div class="checkbox">
+                       <div class="checkbox">
                         <label for="drop-remove">
                           <input type="checkbox" checked id="drop-remove">
                           Eliminar al agendar </label>
