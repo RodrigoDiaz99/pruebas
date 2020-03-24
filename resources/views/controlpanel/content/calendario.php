@@ -62,10 +62,10 @@
                       <div class="external-event bg-warning">Karen López</div>
                       <div class="external-event bg-info">Rodrigo Díaz</div>
                       <div class="external-event bg-primary">Otro vato</div>
-                       <div class="checkbox">
+                      <div class="checkbox">
                         <label for="drop-remove">
-                          <input type="checkbox" id="drop-remove">
-Eliminar al agendar                        </label>
+                          <input type="checkbox" checked id="drop-remove">
+                          Eliminar al agendar </label>
                       </div>
                     </div>
                   </div>
@@ -224,7 +224,7 @@ Eliminar al agendar                        </label>
         },
         //Random default events
         events: [{
-            title: 'All Day Event',
+          /* title: 'All Day Event',
             start: new Date(y, m, 1),
             backgroundColor: '#f56954', //red
             borderColor: '#f56954' //red
@@ -265,9 +265,8 @@ Eliminar al agendar                        </label>
             end: new Date(y, m, 29),
             url: 'http://google.com/',
             backgroundColor: '#3c8dbc', //Primary (light-blue)
-            borderColor: '#3c8dbc' //Primary (light-blue)
-          }
-        ],
+            borderColor: '#3c8dbc' //Primary (light-blue) */
+        }],
         editable: true,
         droppable: true, // this allows things to be dropped onto the calendar !!!
         drop: function(info) {
