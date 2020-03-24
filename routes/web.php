@@ -34,3 +34,7 @@ Route::get('/registro-paciente', function () {
 Route::get('/citas', function () {
     return view('citas');
 });
+Route::get('/expediente', function () {
+    return view('expediente');
+});
+
