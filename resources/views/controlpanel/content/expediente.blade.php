@@ -4,14 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 </head>
 
 <body class="hold-transition sidebar-mini">
     <div class="content-wrapper">
         <div class="card card-danger">
             <div class="card-header">
-                <h3 class="card-title">Expediente de paciente</h3>
+                <h3 class="card-title">Datos de paciente</h3>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -19,7 +18,7 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="Karen Elizabeth" readonly> 
+                            <input type="text" class="form-control" value="Karen Elizabeth" readonly>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -30,7 +29,6 @@
                     </div>
                 </div>
                 <div class="row">
-
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Apellido materno</label>
@@ -57,7 +55,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                 </div>
-                                <input type="text" value="9992556950"  readonly class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
+                                <input type="text" value="9992556950" readonly class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -66,7 +64,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Estado</label>
-                            <select  readonly class="form-control" style="width: max-content;">
+                            <select readonly class="form-control" style="width: max-content;">
                                 <option selected="selected">Yucatán</option>
                                 <option>Alaskaguamas</option>
                             </select>
@@ -76,21 +74,36 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Antecedentes</label>
-                            <input type="text" value="Alergias, hipertensión"  readonly class="form-control" placeholder="Antecedentes">
+                            <input type="text" value="Alergias, hipertensión" readonly class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
                             <label>Peso</label>
-                            <input type="text" value="9999kg"  readonly class="form-control" placeholder="Antecedentes">
+                            <input type="text" value="9999kg" readonly class="form-control" placeholder="Antecedentes">
                         </div>
                     </div>
+                    
                     <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                            <label>Estatura</label>
-                            <input type="text" value="1.99m"  readonly class="form-control" placeholder="Antecedentes">
+                             <!-- text input -->
+                            <div class="form-group">
+                                <label>Estatura</label>
+                                <input type="text" value="1.99m" readonly class="form-control" placeholder="Antecedentes">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <button type=" " class="btn btn-primary">Ver historial</button>
+                                <button type=" " class="btn btn-primary">Ver estudios del paciente</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <button type=" " class="btn btn-danger">Cerrar expediente</button>
+                            </div>
                         </div>
                     </div>
                     <!-- /.card-body -->
@@ -99,7 +112,6 @@
         </div>
     </div>
     <!-- /.card -->
-
     <!-- Page script -->
     <script>
         $(function() {
