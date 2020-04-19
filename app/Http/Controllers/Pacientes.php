@@ -10,7 +10,7 @@ class Pacientes extends Controller
 {
     //
     function checkDb(){
-        $descripcionpaciente=DB::select('select * from pacientes');
+        $descripcionpaciente=DB::select('select * from descripcionpaciente');
         print_r($descripcionpaciente);
 
         echo "chi";
