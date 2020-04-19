@@ -43,3 +43,5 @@ Route::get('/apertura-expediente', function () {
 Route::get('/consulta-expediente', function () {
     return view('expediente');
 });
+
+Route::get('db', 'Pacientes@checkDb');
