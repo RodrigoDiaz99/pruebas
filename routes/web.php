@@ -44,4 +44,7 @@ Route::get('/consulta-expediente', function () {
     return view('expediente');
 });
 
-Route::get('db', 'Pacientes@consultaUsers');
+//Route::get('db', 'Pacientes@consultaUsers');
+Route::get('/db', function () {
+    return view('pruebasdb');
+});
