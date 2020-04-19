@@ -12,8 +12,8 @@ class Pacientes extends Controller
     function consultaUsers(){
         $descripcionpaciente=DB::select('select * from descripcionpaciente');
 
-        echo "chi";
-        return view('pruebadb', $descripcionpaciente);
+
+        return view('pruebadb');
 
     }
 }
