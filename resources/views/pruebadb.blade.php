@@ -48,16 +48,14 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($descripcionpaciente as $v)
                                         <tr>
-                                            <td>{{$v->id_descripcionpaciente}}</td>
                                             
                                             <td>Ayala</td>
                                             <td>Valladares</td>
                                             <td>18</td>
                                             <td><a href=""> Ver expedinete</a></td>
                                         </tr>
-                                        @endforeach
+                                        
                                     </tbody>
                                     <tfoot>
                                         <tr>
