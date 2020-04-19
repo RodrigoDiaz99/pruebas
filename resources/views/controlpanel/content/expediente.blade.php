@@ -50,8 +50,8 @@
                                     <tbody>
                                     @foreach($descripcionpaciente as $v)
                                         <tr>
-                                            <td>{{$v->id_descripcionpaciente}}</td>
-                                            
+                                            <td>{{$v['descripcionpaciente']}}</td>
+
                                             <td>Ayala</td>
                                             <td>Valladares</td>
                                             <td>18</td>
