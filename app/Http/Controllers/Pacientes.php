@@ -9,8 +9,9 @@ use Illuminate\Support\Facades\DB;
 class Pacientes extends Controller
 {
     //
-    function checkDb(){
+    function consultaUsers(){
         $descripcionpaciente=DB::select('select * from descripcionpaciente');
+        return view('pruebadb', $descripcionpaciente);
         print_r($descripcionpaciente);
 
         echo "chi";
