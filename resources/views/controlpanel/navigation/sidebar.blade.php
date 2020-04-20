@@ -114,7 +114,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="/consulta-expediente" class="nav-link">
+                                <a href="/consulta_expediente" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>
                                         Consulta Expediente
