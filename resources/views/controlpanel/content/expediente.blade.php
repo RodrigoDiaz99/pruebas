@@ -49,7 +49,7 @@
                                     </thead>
                                     <tbody>
 
-                                    @foreach($descripcionpaciente as $v)
+                                    @foreach($readpaciente as $v)
                                         <tr>
                                             <td></td>
 

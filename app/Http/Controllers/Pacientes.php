@@ -10,10 +10,10 @@ class Pacientes extends Controller
 {
     //
     function consultaUsers(){
-        $descripcionpaciente=DB::select('select * from descripcionpaciente');
+        $readpaciente=DB::select('select * from descripcionpaciente');
 
 
-        return view('pruebadb', $descripcionpaciente);
+        return view('pruebadb', ['readpaciente'=>$readpaciente]);
 
     }
 }
