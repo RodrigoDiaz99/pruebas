@@ -51,7 +51,7 @@
 
                                     @foreach($readpaciente as $v)
                                         <tr>
-                                            <td></td>
+                                            <td>{{$v->id_descripcionpaciente}}</td>
 
                                             <td>Ayala</td>
                                             <td>Valladares</td>
