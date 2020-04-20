@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\descPacientesModel;
 
-class PacientesController extends Controller
+class descPacientesController extends Controller
 {
     //
 
 
     function consultaUsers(){
 
-        $readpaciente = pacientesModel::all();
+        $readpaciente = descPacientesModel::all();
         return view('expediente', ['readpaciente'=>$readpaciente]);
 
     }
