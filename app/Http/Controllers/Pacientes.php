@@ -13,7 +13,7 @@ class Pacientes extends Controller
         $descripcionpaciente=DB::select('select * from descripcionpaciente');
 
 
-        return view('pruebadb');
+        return view('pruebadb', $descripcionpaciente);
 
     }
 }

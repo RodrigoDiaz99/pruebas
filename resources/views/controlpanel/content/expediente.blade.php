@@ -48,6 +48,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+
                                     @foreach($descripcionpaciente as $v)
                                         <tr>
                                             <td>{{$v['id_descripcionpaciente']}}</td>
@@ -70,7 +71,7 @@
                                     </tfoot>
                                 </table>
                             </div>
-                            
+
                             <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
