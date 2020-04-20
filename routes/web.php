@@ -38,11 +38,11 @@ Route::get('/calendario-analisis', function () {
     return view('citas');
 });
 Route::get('/apertura-expediente', function () {
-    return view('newexp');
+    return view('aperturaexpediente');
 });
 Route::get('/consulta-expediente', function () {
     return view('expediente');
 });
 
-Route::get('db', 'Pacientes@consultaUsers');
-Route::get('user/{id}', 'UserController@show');
+Route::get('db', 'PacientesController@consultaUsers');
+ 
