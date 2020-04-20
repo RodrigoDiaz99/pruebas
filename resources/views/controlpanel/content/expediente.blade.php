@@ -49,12 +49,13 @@
                                     </thead>
                                     <tbody>
 
-                                    @foreach($readpaciente as $v)
+                                    @foreach($tablaPaciente as $i)
                                         <tr>
-                                            <td>{{$v->id_descripcionpaciente}}</td>
-                                            <td>Ayala</td>
-                                            <td>Valladares</td>
-                                            <td>18</td>
+                                            <td>{{$i->id_descripcionpaciente}}</td>
+                                            <td>{{$i->id_descripcionpaciente}}</td>
+                                            <td>{{$i->id_descripcionpaciente}}</td>
+                                            <td>{{$i->id_descripcionpaciente}}</td>
+
                                             <td><a href=""> Ver expedinete</a></td>
                                         </tr>
                                         @endforeach
