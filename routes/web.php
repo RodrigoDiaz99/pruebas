@@ -44,5 +44,5 @@ Route::get('/consulta-expediente', function () {
     return view('expediente');
 });
 
-Route::get('db', 'PacientesController@consultaUsers');
+Route::get('/db', 'PacientesController@consultaUsers');
  
