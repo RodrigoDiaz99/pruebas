@@ -13,12 +13,12 @@ class Pacientes extends Controller
 
 
     function consultaUsers(){
-        $data = paciente::all();
+        $readpaciente = paciente::all();
 
 
 
 
-        return view('pruebadb', ['readpaciente'=>$data]);
+        return view('pruebadb', ['readpaciente'=>$readpaciente]);
 
     }
 }
