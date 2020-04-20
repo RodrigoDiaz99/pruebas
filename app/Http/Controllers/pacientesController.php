@@ -12,7 +12,7 @@ class pacientesController extends Controller
     function cargaPacientes(){
         
         //$cargarTabla = pacientesModel::all();
-        $cargaTabla = pacientesModel::where('nombre','Kenn')->get();
+        $cargarTabla = pacientesModel::where('nombre','Kenn')->get();
         return view('expediente', ['tablaPaciente'=>$cargarTabla]);
     }
 }
