@@ -5,6 +5,6 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class paciente extends Model{
+class pacientesModel extends Model{
     protected $table = 'descripcionpaciente'; 
 }
