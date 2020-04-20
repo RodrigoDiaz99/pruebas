@@ -38,7 +38,7 @@ Route::get('/calendario-analisis', function () {
     return view('citas');
 });
 Route::get('/apertura-expediente', function () {
-    return view('aperturaexpediente');
+    return view('newexp');
 });
 Route::get('/consulta-expediente', function () {
     return view('expediente');
