@@ -15,9 +15,9 @@ class PacientesController extends Controller
     function consultaUsers(){
 
 
-    
+
         $readpaciente = pacientesModel::all();
-        return view('pruebadb', ['readpaciente'=>$readpaciente]);
+        return view('expediente', ['readpaciente'=>$readpaciente]);
 
     }
 }
