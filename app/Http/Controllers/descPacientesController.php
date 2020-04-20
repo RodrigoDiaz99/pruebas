@@ -10,9 +10,7 @@ use App\descPacientesModel;
 class descPacientesController extends Controller
 {
     //
-
-
-    function consultaUsers(){
+    function consultaDescPacientes(){
 
         $readpaciente = descPacientesModel::all();
         return view('expediente', ['readpaciente'=>$readpaciente]);

@@ -42,5 +42,5 @@ Route::get('/apertura-expediente', function () {
 });
 Route::get('/consulta_expediente', 'PacientesController@consultaUsers');
 
-Route::get('/db', 'descPacientesController@consultaUsers');
+Route::get('/db', 'descPacientesController@consultaDescPacientes');
 
