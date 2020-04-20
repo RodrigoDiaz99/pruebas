@@ -40,7 +40,7 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Nombre(s)</th>
+                                            <th>Nombres(s)</th>
                                             <th>Apellido Paterno</th>
                                             <th>Apellido Materno</th>
                                             <th>Edad</th>
@@ -52,7 +52,6 @@
                                     @foreach($readpaciente as $v)
                                         <tr>
                                             <td>{{$v->id_descripcionpaciente}}</td>
-
                                             <td>Ayala</td>
                                             <td>Valladares</td>
                                             <td>18</td>
