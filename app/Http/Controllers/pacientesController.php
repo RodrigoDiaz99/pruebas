@@ -15,7 +15,7 @@ class pacientesController extends Controller
         // $cargarTabla = pacientesModel::all(); //carga toda la tabla, incluso sin usar
         // $cargarTabla = pacientesModel::where('nombre','Kenn')->get(); //prueba de where
         // $cargarTabla = pacientesModel::select('nombre')->get(); //solo cargar col "nombre" usando SELECT
-        $cargarTabla = pacientesModel::select('nombre', 'apep', 'apem', 'edad')->get(); //usando SELECT
+        $cargarTabla = pacientesModel::select('nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad')->get(); //usando SELECT
 
         return view('expediente', ['tablaPaciente' => $cargarTabla]);
     }
