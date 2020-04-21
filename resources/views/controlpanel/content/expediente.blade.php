@@ -51,9 +51,9 @@
 
                                     @foreach($tablaPaciente as $i)
                                         <tr>
-                                            <td>{{$i->nombre}}</td>
-                                            <td>{{$i->apep}}</td>
-                                            <td>{{$i->apem}}</td>
+                                            <td>{{$i->nombre_paciente}}</td>
+                                            <td>{{$i->apellido_paterno}}</td>
+                                            <td>{{$i->apellido_materno}}</td>
                                             <td>{{$i->edad}}</td>
 
                                             <td><a href=""> Ver expedinete</a></td>
