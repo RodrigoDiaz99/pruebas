@@ -9,6 +9,8 @@ use App\detallesModel;
 class detallesController extends Controller
 {
 
+    //peroprimodigalookaventura
+
     function cargaDetalles()
     {
 
