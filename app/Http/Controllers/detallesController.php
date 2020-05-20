@@ -6,14 +6,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\detallesModel;
 
-class pacientesController extends Controller
+class detallesController extends Controller
 {
 
     function cargaDetalles()
     {
 
 
-        $cargarTabla = pacientesModel::select('nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad')->get(); //usando SELECT
+        $cargarTabla = detallesModel::select('nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad')->get(); //usando SELECT
 
         return view('detalleexpediente', ['tablaPaciente' => $cargarTabla]);
     }
