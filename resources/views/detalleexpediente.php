@@ -1,3 +1,3 @@
 @include('controlpanel.navigation.navbar')
 @include('controlpanel.navigation.sidebar')
-@extends('controlpanel.content.detalleexpediente')
+ @extends('controlpanel.content.detalleexpediente')
