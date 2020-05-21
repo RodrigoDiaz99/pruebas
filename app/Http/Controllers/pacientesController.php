@@ -61,7 +61,7 @@ class pacientesController extends Controller
     public function edit($id)
     {
         $paciente=pacientesModel::find($id); //el cliente de aca es el mismo que el de abajo
-        return view('content.detalleexpediente',$paciente);
+        return view('detalleexp',$paciente);
 
     }
 
