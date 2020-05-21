@@ -64,7 +64,7 @@
 
                                     <tbody>
 
-                                        @foreach($tablaPaciente as $i)
+                                        @foreach($pacientes as $i)
                                         <tr>
                                             <td>{{$i->id_paciente}}</td>
                                             <td>{{$i->nombre_paciente}}</td>
