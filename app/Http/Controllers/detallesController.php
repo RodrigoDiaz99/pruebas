@@ -17,6 +17,6 @@ class detallesController extends Controller
 
         $cargarTabla = detallesModel::select('nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad')->get(); //usando SELECT
 
-        return view('detalleexpediente', ['tablaDetalles' => $cargarTabla]);
+        return view('detalleexp', ['tablaDetalles' => $cargarTabla]);
     }
 }
