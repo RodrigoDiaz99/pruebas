@@ -11,12 +11,16 @@ class detallesController extends Controller
 
     //peroprimodigalookaventura
 
-    function cargaDetalles()
+    function cargaDetalles($id)
     {
 
 
-        $cargarTabla = detallesModel::select('nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad')->get(); //usando SELECT
+        $cargarTabla = detallesModel::select('nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad'); //usando SELECT
+        $cargarTabla = detallesModel::where('id_paciente', $id)->get(); //usando SELECT
+
 
         return view('detalleexp', ['tablaDetalles' => $cargarTabla]);
     }
+
+    
 }

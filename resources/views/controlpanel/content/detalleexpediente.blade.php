@@ -13,6 +13,7 @@
                 <h3 class="card-title">Apertura de expediente</h3>
             </div>
             <div class="card-body">
+                
                 <div class="row">
                     <div class="col-sm-6">
                         <!-- text input -->
