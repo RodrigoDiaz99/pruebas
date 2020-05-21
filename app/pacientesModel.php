@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class pacientesModel extends Model
 {
     //use SoftDeletes;
-    protected $table = 'pacientes';
+    protected $fillable = ['id_paciente'];
 }
