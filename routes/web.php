@@ -40,10 +40,9 @@ Route::get('/calendario-analisis', function () {
 Route::get('/apertura-expediente', function () {
     return view('aperturaexpediente');
 });
-Route::get('/consulta_expediente', 'pacientesController@cargaPacientes');
+Route::get('/consulta_expediente', 'pacientesController');
 
 Route::get('/db', 'pacientesController@cargaPacientes');
 
 
-Route::get('/detalleExpediente', 'detallesController@cargaDetalles');
 

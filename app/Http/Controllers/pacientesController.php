@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\pacientesModel;
+use App\detallesModel;
+
 
 class pacientesController extends Controller
 {
@@ -19,5 +21,17 @@ class pacientesController extends Controller
 
         return view('expediente', ['tablaPaciente' => $cargarTabla]);
     }
+
+    function detalleExpediente($id)
+    {
+
+
+        $cargarTabla = detallesModel::select('nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad'); //usando SELECT
+        $cargarTabla = detallesModel::where('id_paciente', $id)->get(); //usando SELECT
+
+
+        return view('detalleexp', ['tablaDetalles' => $cargarTabla]);
+    }
+
 
 }
