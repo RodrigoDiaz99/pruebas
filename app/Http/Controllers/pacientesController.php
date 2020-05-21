@@ -17,7 +17,7 @@ class pacientesController extends Controller
     public function index()
     {
         $datos['pacientes']=pacientesModel::paginate(1000000); //lo que esta en comillas es lo que va primero en el foreach
-        return view('content.expediente',$datos);
+        return view('expediente',$datos);
     }
 
     /**
