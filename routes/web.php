@@ -45,5 +45,5 @@ Route::get('/consulta_expediente', 'pacientesController@cargaPacientes');
 Route::get('/db', 'pacientesController@cargaPacientes');
 
 
-Route::get('/detallesex', 'detallesController@cargaDetalles');
+Route::get('/detalleExpediente', 'detallesController@cargaDetalles');
 
