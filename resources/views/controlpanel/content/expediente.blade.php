@@ -41,6 +41,8 @@
                                     <thead>
                                         <tr>
                                             <th>Nombre(s)</th>
+
+                                            <th>Nombre(s)</th>
                                             <th>Apellido Paterno</th>
                                             <th>Apellido Materno</th>
                                             <th>Edad</th>
@@ -49,9 +51,9 @@
                                     </thead>
                                     <tbody>
 
-                                    @foreach($tablaPaciente as $i)
+                                        @foreach($tablaPaciente as $i)
                                         <tr>
-                                        <td>{{$i->id_paciente}}</td>
+                                            <td>{{$i->id_paciente}}</td>
                                             <td>{{$i->nombre_paciente}}</td>
                                             <td>{{$i->apellido_paterno}}</td>
                                             <td>{{$i->apellido_materno}}</td>
@@ -63,6 +65,8 @@
                                     </tbody>
                                     <tfoot>
                                         <tr>
+                                            <th>Nombre(s)</th>
+
                                             <th>Nombre(s)</th>
                                             <th>Apellido Paterno</th>
                                             <th>Apellido Materno</th>
