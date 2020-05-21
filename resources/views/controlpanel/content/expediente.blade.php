@@ -59,7 +59,7 @@
                                             <td>{{$i->apellido_materno}}</td>
                                             <td>{{$i->edad}}</td>
 
-                                            <td><a href="/detalleExpediente"> Ver expedinete</a></td>
+                                            <td><a href="{{url('/detalleExpediente/'.$i->id_paciente.'/edit')}}"> Ver expedinete</a></td>
                                         </tr>
                                         @endforeach
                                     </tbody>
