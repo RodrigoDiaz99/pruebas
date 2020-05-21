@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\pacientesModel;
-use App\detallesModel;
 
 
 class pacientesController extends Controller
