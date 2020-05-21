@@ -49,20 +49,7 @@
                                             <th>Expediente</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
 
-                                        @foreach($tablaPaciente as $i)
-                                        <tr>
-                                            <td>{{$i->id_paciente}}</td>
-                                            <td>{{$i->nombre_paciente}}</td>
-                                            <td>{{$i->apellido_paterno}}</td>
-                                            <td>{{$i->apellido_materno}}</td>
-                                            <td>{{$i->edad}}</td>
-
-                                            <td><a href="{{url('/consulta_expediente/'.$i->id_paciente.'/detalleExpediente')}}"> Ver expedinete</a></td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
                                     <tfoot>
                                         <tr>
                                             <th>Nombre(s)</th>
@@ -74,6 +61,22 @@
                                             <th>Expediente</th>
                                         </tr>
                                     </tfoot>
+
+                                    <tbody>
+
+                                        @foreach($tablaPaciente as $i)
+                                        <tr>
+                                            <td>{{$i->id_paciente}}</td>
+                                            <td>{{$i->nombre_paciente}}</td>
+                                            <td>{{$i->apellido_paterno}}</td>
+                                            <td>{{$i->apellido_materno}}</td>
+                                            <td>{{$i->edad}}</td>
+
+                                            <td><a href="{{url('/consulta_expediente/'.$i->id_paciente.'/edit')}}"> Ver expedinete</a></td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+
                                 </table>
                             </div>
 

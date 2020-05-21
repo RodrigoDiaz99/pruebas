@@ -2,36 +2,89 @@
 
 namespace App\Http\Controllers;
 
+use App\pacientesModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\pacientesModel;
-use App\detallesModel;
-
 
 
 class pacientesController extends Controller
 {
-
-    function cargaPacientes()
-    { 
-
-        // $casrgarTabla = pacientesModel::all(); //carga toda la tabla, incluso sin usar
-        // $cargarTabla = pacientesModel::where('nombre','Kenn')->get(); //prueba de where
-        // $cargarTabla = pacientesModel::select('nombre')->get(); //solo cargar col "nombre" usando SELECT
-        $cargarTabla = pacientesModel::select('id_paciente', 'nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad')->get(); //usando SELECT
-
-        return view('expediente', ['tablaPaciente' => $cargarTabla]);
-    }
-    function cargaDetalles($id)
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
-
-
-        $cargarTabla = detallesModel::select('nombre_paciente', 'apellido_paterno', 'apellido_materno', 'edad'); //usando SELECT
-        $cargarTabla = detallesModel::where('id_paciente', $id)->get(); //usando SELECT
-
-
-        return view('detalleexp', ['tablaDetalles' => $cargarTabla]);
+        $datos['pacientes']=pacientesModel::paginate(1000000); //lo que esta en comillas es lo que va primero en el foreach
+        return view('content.expediente',$datos);
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $paciente=pacientesModel::find($id); //el cliente de aca es el mismo que el de abajo
+        return view('content.detalleexpediente',$paciente);
+
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
 }
