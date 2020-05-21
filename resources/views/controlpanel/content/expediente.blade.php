@@ -51,6 +51,7 @@
 
                                     @foreach($tablaPaciente as $i)
                                         <tr>
+                                        <td>{{$i->id_paciente}}</td>
                                             <td>{{$i->nombre_paciente}}</td>
                                             <td>{{$i->apellido_paterno}}</td>
                                             <td>{{$i->apellido_materno}}</td>
