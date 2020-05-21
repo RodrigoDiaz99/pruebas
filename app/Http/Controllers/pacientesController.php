@@ -19,4 +19,5 @@ class pacientesController extends Controller
 
         return view('expediente', ['tablaPaciente' => $cargarTabla]);
     }
+
 }

@@ -59,7 +59,7 @@
                                             <td>{{$i->apellido_materno}}</td>
                                             <td>{{$i->edad}}</td>
 
-                                            <td><a href=""> Ver expedinete</a></td>
+                                            <td><a href="/detalleExpediente"> Ver expedinete</a></td>
                                         </tr>
                                         @endforeach
                                     </tbody>

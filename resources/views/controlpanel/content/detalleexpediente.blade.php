@@ -18,7 +18,7 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="Karen Elizabeth">
+                            <input type="text" class="form-control" value="{{$i->id_paciente}}">
                         </div>
                     </div>
                     <div class="col-sm-6">
