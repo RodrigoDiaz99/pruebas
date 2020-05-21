@@ -19,7 +19,7 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="{{$paciente->id_paciente}}">
+                            <input type="text" class="form-control" value="{{$paciente->pilin}}">
                         </div>
                     </div>
                     <div class="col-sm-6">
