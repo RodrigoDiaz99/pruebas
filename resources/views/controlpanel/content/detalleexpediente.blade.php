@@ -19,13 +19,13 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="Ayala">
+                            <input type="text" class="form-control" value="{{$paciente->nombre_paciente}}">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Apellido paterno</label>
-                            <input type="text" class="form-control" value="Ayala">
+                            <input type="text" class="form-control" value="{{$paciente->apellido_paterno}}">
                         </div>
                     </div>
                 </div><!-- /.container-fluid -->
@@ -36,7 +36,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Apellido materno</label>
-                                <input type="text" class="form-control" value="Valladares">
+                                <input type="text" class="form-control" value="{{$paciente->apellido_materno}}">
                             </div>
                         </div>
                         <div class="col-sm-6">
