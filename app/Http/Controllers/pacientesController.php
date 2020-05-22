@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\pacientesModel;
+use App\detallesModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -17,6 +18,7 @@ class pacientesController extends Controller
     public function index()
     {
         $datos['pacientes']=pacientesModel::paginate(1000000); //lo que esta en comillas es lo que va primero en el foreach
+        $datos['expediente']=detallesModel::paginate(1000000); //maldito
         return view('expediente',$datos);
     }
 
@@ -60,9 +62,10 @@ class pacientesController extends Controller
      */
     public function edit($id)
     {
-        $id_paciente = $id;
-        $paciente=pacientesModel::find($id_paciente); //el cliente de aca es el mismo que el de abajo
-        return view('detalleexp',compact('paciente'));
+        $paciente=pacientesModel::find($id); //el cliente de aca es el mismo que el de abajo
+        $expediente=detallesModel::find($id); //el cliente de aca es el mismo que el de abajo
+
+        return view('detalleexp',compact('paciente', 'expediente'));
 
     }
 
