@@ -25,7 +25,6 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="/css/daterangepicker.css">
     <!-- summernote -->
-    <link rel="stylesheet" href="/css/reloj.css">
 
     <link rel="stylesheet" href="/css/summernote-bs4.css">
 

@@ -75,5 +75,7 @@
   <!-- jQuery -->
 </body>
 <script src="../../dist/js/reloj.js"></script>
+<link rel="stylesheet" href="/css/reloj.css">
+
 
 </html>
