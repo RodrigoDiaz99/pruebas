@@ -114,7 +114,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-baby text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Lactancia Materna</h3>
+                        <h3 class="h4 mb-2">Cirugia</h3>
                         <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quia? Incidunt ut molestias debitis tenetur nihil eaque libero ipsam, autem maxime? Tempora provident fuga quia ullam ea minima, nesciunt quaerat!</p>
                     </div>
                 </div>
