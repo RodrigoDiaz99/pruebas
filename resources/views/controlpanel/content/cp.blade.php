@@ -78,5 +78,6 @@
   <!-- ./wrapper -->
   <!-- jQuery -->
 </body>
+<script src="../../dist/js/reloj.js"></script>
 
 </html>
