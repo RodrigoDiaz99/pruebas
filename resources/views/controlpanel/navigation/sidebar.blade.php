@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+
     <!-- Google Font: Source Sans Pro -->
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -133,6 +134,7 @@
         </div>
         <!-- /.sidebar -->
     </aside> <!-- Bootstrap -->
+    <script src="../../dist/js/reloj.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery UI -->
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>

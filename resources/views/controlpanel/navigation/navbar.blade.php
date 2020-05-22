@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="/css/summernote-bs4.css">
 
+
     <!-- Google Font: Source Sans Pro -->
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -50,6 +51,7 @@
     </nav>
     <!-- /.navbar -->
     <!-- jQuery -->
+    <script src="../../dist/js/reloj.js"></script>
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -60,7 +62,7 @@
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
-    <script src="../../dist/js/reloj.js"></script>
+
     <script>
         $(function() {
             $("#example1").DataTable();

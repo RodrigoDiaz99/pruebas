@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="//res.cloudinary.com/hmyqulmkc/image/upload/v1585007390/icon_dwqmji.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="//use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+
     <!-- Google fonts-->
     <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
@@ -52,11 +53,11 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase text-white font-weight-bold">Consultorio de la médico Carmen Andrea Reyes Reyes</h1>
+                    <h1 class="text-uppercase text-white font-weight-bold">Consultorio de la Doctora Carmen Andrea Reyes Reyes</h1>
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 font-weight-light mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tempora expedita aut ea assumenda libero ipsam nulla doloremque, impedit obcaecati repellat iusto dolor officia, nesciunt veritatis cum dignissimos voluptates accusantium.</p>
+
                     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Encuentra Más</a>
                 </div>
             </div>
@@ -69,35 +70,35 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="text-white mt-0">Tenemos lo que necesitas</h2>
                     <hr class="divider light my-4" />
-                    <p class="text-white-50 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id at cumque necessitatibus ea porro nulla itaque cupiditate, praesentium ullam aperiam eaque beatae provident fugit quis nemo magni sed totam officiis.</p>
+                  <!--  <p class="text-white-50 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id at cumque necessitatibus ea porro nulla itaque cupiditate, praesentium ullam aperiam eaque beatae provident fugit quis nemo magni sed totam officiis.</p>-->
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Comenzemos!</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Services section-->
-    <section class="page-section" id="services">
+    <section class="bg-light py-5" id="services">
         <div class="container">
             <h2 class="text-center mt-0">A tu servicio</h2>
             <hr class="divider my-4" />
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                        <i class="fas fa-4x fa-briefcase-medical text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Ginecologia</h3>
                         <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem velit sunt cupiditate sapiente alias maiores nulla, ipsa, nesciunt dolores reiciendis accusamus animi eaque, ratione ipsam in doloremque possimus neque.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Papanicolau</h3>
+                        <i class="fas fa-4x fa-laptop-medical text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Papanicolao</h3>
                         <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium quia quas animi veniam recusandae neque sit, nihil quis voluptatum aperiam nulla saepe eveniet natus sed impedit? Minima, nostrum blanditiis.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+                        <i class="fas fa-4x fa-stethoscope text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Obstétricas</h3>
                         <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quam soluta tempore fuga doloremque architecto sint tempora quisquam, aliquam, rem dignissimos molestiae amet in repellendus ex porro magni minima. In?</p>
                     </div>
@@ -105,10 +106,19 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Embarazadas</h3>
+                        <h3 class="h4 mb-2">Colposcopia</h3>
                         <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quia? Incidunt ut molestias debitis tenetur nihil eaque libero ipsam, autem maxime? Tempora provident fuga quia ullam ea minima, nesciunt quaerat!</p>
                     </div>
                 </div>
+                <div align="center">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-baby text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Lactancia Materna</h3>
+                        <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quia? Incidunt ut molestias debitis tenetur nihil eaque libero ipsam, autem maxime? Tempora provident fuga quia ullam ea minima, nesciunt quaerat!</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -120,7 +130,7 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="mt-0">¡Mantengámonos en contacto!</h2>
                     <hr class="divider my-4" />
-                    <p class="text-muted mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores delectus quas rerum voluptatem amet tenetur vitae minima hic rem, ex numquam natus harum, neque accusantium deserunt quod veritatis, voluptas alias?</p>
+                  <!--  <p class="text-muted mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores delectus quas rerum voluptatem amet tenetur vitae minima hic rem, ex numquam natus harum, neque accusantium deserunt quod veritatis, voluptas alias?</p>-->
                 </div>
             </div>
             <div class="row">
