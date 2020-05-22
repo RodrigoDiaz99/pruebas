@@ -35,37 +35,8 @@
         </div><!-- /.container-fluid -->
       </div>
       <!-- /.content-header -->
-
-
-
-                    <!-- /.direct-chat-msg -->
-                    <!-- Message. Default to the left -->
-
-                  <!--/.direct-chat-messages-->
-                  <!-- Contacts are loaded here -->
-
-                      <!-- End Contact Item -->
-
-                      <!-- End Contact Item -->
-
-                <!-- /.card-footer-->
               </div>
-              <!--/.direct-chat -->
-              <!-- TO DO List -->
 
-                <!-- /.card-header -->
-
-                      <!-- checkbox -->
-
-              <!-- Map card -->
-
-              <!-- /.card -->
-
-              <!-- Calendar -->
-
-                  <!-- tools card -->
-
-    <!-- /.content-wrapper -->
     <footer class="main-footer">
 
     </footer>
