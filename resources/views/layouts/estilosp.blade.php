@@ -2,15 +2,24 @@
 <html lang="en">
 
 <head>
+    <!--scripts-->
+    <script src="//use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
 
+    <title>Carmen Andrea Reyes Reyes</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Carmen Andrea Reyes Reyes</title>
+    <meta name="description" content="Pagina oficial del consultorio de la doctora Carmen Andrea Ryes Reyes" />
+    <meta name="author" content="Carmen Andrea Reyes Reyes" >
+    <meta name="Copyrigth" content="Carmen Andrea Reyes Reyes">
+    <meta name="keywords" content="medicina, salud, mujeres, ginecologia, obstetricia, papanicolao, lactancia, embarazos, facebook, twitter, yucatan">
+    <meta name="canonical" hreflang="x-default">
+
+<!-- icono)-->
     <link rel="icon" type="image/png" href="//res.cloudinary.com/hmyqulmkc/image/upload/v1585007390/icon_dwqmji.png" />
+
+    <!--Begin styles-->
     <!-- Font Awesome icons (free version)-->
-    <script src="//use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+
 
     <!-- Google fonts-->
     <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
@@ -19,6 +28,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="/css/styles.css" rel="stylesheet">
+    <!--end styles-->
 </head>
 
 <body id="page-top">
@@ -30,6 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
 
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <!--begin menu-->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
 
@@ -48,6 +59,7 @@
             </div>
         </div>
     </nav>
+    <!--end menu-->
     <!-- Masthead-->
     <header class="masthead">
         <div class="container h-100">
