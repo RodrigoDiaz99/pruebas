@@ -9,7 +9,7 @@
 body {
 	background:url(bg.jpg) #F0F0F0;
 	background-size:cover;
-	color:#fff;
+	color:rgb(0, 0, 0);
 	font-size: 16px;
 }
 
@@ -36,7 +36,7 @@ body {
 	font-size:1.5em;
 	margin-bottom: 0.3125rem;
 	/*margin-bottom: 5px;*/
-	background: rgba(0,0,0,.5);
+	background: url(//res.cloudinary.com/hmyqulmkc/image/upload/v1590193451/watercolor_l37qep.png)rgba(0,0,0,.5);
 	padding: 20px;
 	width: 100%;
 }
@@ -47,7 +47,7 @@ body {
 	padding: 20px;
 	font-size: 4em;
 	text-align: center;
-	background: rgba(0,0,0,.5);
+	background: url(//res.cloudinary.com/hmyqulmkc/image/upload/v1590193451/watercolor_l37qep.png)rgba(255, 0, 0, 0.5);
 }
 
 .reloj .caja-segundos {
