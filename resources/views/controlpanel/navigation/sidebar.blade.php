@@ -93,6 +93,7 @@
                                 <p>Registrar paciente</p>
                             </a>
                         </li>
+                     
 
                     </ul>
                 </li>
@@ -111,14 +112,6 @@
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>
                                     Apertura Expediente
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/consulta_expediente" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>
-                                    Consulta Expediente
                                 </p>
                             </a>
                         </li>
