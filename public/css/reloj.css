@@ -7,7 +7,7 @@
 }
 
 body {
-	background:url(bg.jpg) #F0F0F0;
+	background:rgb(134, 55, 128);
 	background-size:cover;
 	color:#fff;
 	font-size: 16px;
