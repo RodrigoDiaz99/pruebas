@@ -40,7 +40,6 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Nombre(s)</th>
 
                                             <th>Nombre(s)</th>
                                             <th>Apellido Paterno</th>
@@ -52,7 +51,6 @@
 
                                     <tfoot>
                                         <tr>
-                                            <th>Nombre(s)</th>
 
                                             <th>Nombre(s)</th>
                                             <th>Apellido Paterno</th>
@@ -66,7 +64,6 @@
 
                                         @foreach($pacientes as $i)
                                         <tr>
-                                            <td>{{$i->id_paciente}}</td>
                                             <td>{{$i->nombre_paciente}}</td>
                                             <td>{{$i->apellido_paterno}}</td>
                                             <td>{{$i->apellido_materno}}</td>

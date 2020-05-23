@@ -13,40 +13,45 @@
                 <h3 class="card-title">Apertura de expediente</h3>
             </div>
             <div class="card-body">
-                
+
                 <!-- Main content -->
                 <section class="content">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <!-- text input -->
-                                <div class="form-group">
-                                    <label>Paciente</label>
-                                    <input type="text" class="form-control" value="Será combo box de lista de paciente xd">
-                                </div>
-                            </div>
-                            
-                        </div><!-- /.container-fluid -->
                     <div class="row">
-                    
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Paciente</label>
+                                <select class="form-control" style="width: max-content;">
+                                    <option selected="selected">- Seleccione -</option>
+                                    @foreach($pacientes as $i)
+                                    <option>{{$i->nombre_paciente}} {{$i->apellido_paterno}} {{$i->apellido_materno}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+
+                    </div><!-- /.container-fluid -->
+                    <div class="row">
+
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
                                 <label>Antecedentes</label>
-                                <input type="text" value="Alergias, hipertensión" class="form-control" placeholder="Antecedentes">
+                                <input required type="text" value="" class="form-control" placeholder="Antecedentes">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
                                 <label>Peso</label>
-                                <input type="text" value="9999kg" class="form-control" placeholder="Antecedentes">
+                                <input required type="text" value="" class="form-control" placeholder="Peso">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
                                 <label>Estatura</label>
-                                <input type="text" value="1.99m" class="form-control" placeholder="Antecedentes">
+                                <input required type="text" value="" class="form-control" placeholder="Estatura">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -160,7 +165,7 @@
                                     </label>
                                 </div>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioOtroNo" name="r6" checked> 
+                                    <input type="radio" id="radioOtroNo" name="r6" checked>
                                     <label for="radioOtroNo">No
                                     </label>
                                 </div>
@@ -188,9 +193,7 @@
                     <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
-                            <button type=" " class="btn btn-primary">Ver historial</button>
-                            <button type=" " class="btn btn-primary">Ver estudios del paciente</button>
-                            <button type=" " class="btn btn-primary">Ver colposcopías</button>
+                            <button type=" " class="btn btn-primary">Aperturar expediente</button>
                         </div>
                     </div>
                     <div class="col-sm-6">

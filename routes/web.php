@@ -23,9 +23,7 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
-Route::get('/pacientes', function () {
-    return view('pacientes');
-});
+
 
 Route::get('/registro-paciente', function () {
     return view('registerp');
@@ -38,8 +36,13 @@ Route::get('/calendario-analisis', function () {
     return view('citas');
 });
 
+Route::get('/pacientes', function () {
+    return view('pacientes');
+});
+
+Route::resource('/registro-paciente', 'pacientesController');
+
+
 Route::resource('/apertura-expediente', 'aperturaExpController');
 
 Route::resource('/consulta_expediente', 'detallesController');
-
-

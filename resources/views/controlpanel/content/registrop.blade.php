@@ -14,19 +14,21 @@
                 <h3 class="card-title">Registro de paciente</h3>
             </div>
             <div class="card-body">
-                <form>
+                <form action="{{route('registro-paciente.store')}}" method="POST">
+                    @csrf
+
                     <div class="row">
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
                                 <label>Nombre(s)</label>
-                                <input type="text" class="form-control" placeholder="Nombre(s)" required>
+                                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre(s)" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Apellido paterno</label>
-                                <input type="text" class="form-control" placeholder="Apellido paterno" required>
+                                <input type="text" name="app" id="app" class="form-control" placeholder="Apellido paterno" required>
                             </div>
                         </div>
                     </div>
@@ -34,7 +36,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Apellido materno</label>
-                                <input type="text" class="form-control" placeholder="Apellido materno" required>
+                                <input type="text" name="apm" id="apm" class="form-control" placeholder="Apellido materno" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -44,7 +46,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                     </div>
-                                    <input required type="number" min="0" step="1" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                    <input id="edad" name="edad" required type="number" min="0" step="1" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                                 </div>
                             </div>
                         </div>
@@ -54,12 +56,12 @@
                         <!-- /.form group -->
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Número telefónico:</label>
+                                <label>Número telefónico</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" style="width: auto;" id="phoneNumber">
+                                    <input id="tel" type="text" class="form-control" style="width: auto;" id="phoneNumber">
                                 </div>
                                 <!-- /.input group -->
                             </div>
@@ -67,7 +69,7 @@
                         <!-- /.form group -->
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Estado</label>
+                                <label>Municipio</label>
                                 <select class="form-control" style="width: max-content;">
                                     <option selected="selected">Mérida</option>
                                     <option>Alaskaguamas</option>
@@ -78,7 +80,7 @@
                             <!-- text input -->
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">Agregar paciente</button>
-                                <button type=" " class="btn btn-danger">Limpiar datos</button>
+                                <a href="/admin" class="btn btn-danger">Cancelar</a>
                             </div>
                         </div>
                     </div>
