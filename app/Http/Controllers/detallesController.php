@@ -19,7 +19,7 @@ class detallesController extends Controller
     {
         $pacientes = pacientesModel::paginate(1000000);
         $expediente = detallesModel::paginate(1000000);
-        return view('expediente', compact('pacientes', 'expediente'));
+        return view('pacientes', compact('pacientes', 'expediente'));
     }
 
     /**
