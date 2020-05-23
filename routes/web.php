@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,35 +13,24 @@
 Route::get('/', function () {
     return view('principal');
 });
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/admin', function () {
     return view('admin');
 });
 
-
-
 Route::get('/registro-paciente', function () {
     return view('registerp');
 });
-
 Route::get('/calendario-citas', function () {
     return view('citas');
 });
 Route::get('/calendario-analisis', function () {
     return view('citas');
 });
-
 Route::get('/pacientes', function () {
     return view('pacientes');
 });
-
 Route::resource('/registro-paciente', 'pacientesController');
-
-
 Route::resource('/apertura-expediente', 'aperturaExpController');
-
-Route::resource('/consulta_expediente', 'detallesController');
+Route::resource('/lista-pacientes', 'detallesController');

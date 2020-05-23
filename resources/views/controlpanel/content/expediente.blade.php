@@ -40,7 +40,6 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-
                                             <th>Nombre(s)</th>
                                             <th>Apellido Paterno</th>
                                             <th>Apellido Materno</th>
@@ -48,10 +47,8 @@
                                             <th>Expediente</th>
                                         </tr>
                                     </thead>
-
                                     <tfoot>
                                         <tr>
-
                                             <th>Nombre(s)</th>
                                             <th>Apellido Paterno</th>
                                             <th>Apellido Materno</th>
@@ -59,24 +56,19 @@
                                             <th>Expediente</th>
                                         </tr>
                                     </tfoot>
-
                                     <tbody>
-
                                         @foreach($pacientes as $i)
                                         <tr>
                                             <td>{{$i->nombre_paciente}}</td>
                                             <td>{{$i->apellido_paterno}}</td>
                                             <td>{{$i->apellido_materno}}</td>
                                             <td>{{$i->edad}}</td>
-
-                                            <td><a href="{{url('/consulta_expediente/'.$i->id_paciente.'/edit')}}"> Ver expedinete</a></td>
+                                            <td><a href="{{url('/lista-pacientes/'.$i->id_paciente.'/edit')}}"> Ver expediente</a></td>
                                         </tr>
                                         @endforeach
                                     </tbody>
-
                                 </table>
                             </div>
-
                             <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
@@ -96,7 +88,6 @@
             reserved.
         </footer>
         <!-- Control Sidebar -->
-
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
