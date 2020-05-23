@@ -7,6 +7,7 @@ use App\detallesModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+
 class pacientesController extends Controller
 {
     /**
@@ -17,8 +18,10 @@ class pacientesController extends Controller
     public function index()
     {
         $pacientes = pacientesModel::paginate(1000000);
-        return view('registerp', compact('pacientes'));
+        $expediente = detallesModel::paginate(1000000);
+        return view('pacientes', compact('pacientes', 'expediente'));
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -28,6 +31,7 @@ class pacientesController extends Controller
     {
         //
     }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -48,6 +52,7 @@ class pacientesController extends Controller
 
         return redirect()->route('registro-paciente');
     }
+
     /**
      * Display the specified resource.
      *
@@ -58,6 +63,7 @@ class pacientesController extends Controller
     {
         //
     }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -66,7 +72,12 @@ class pacientesController extends Controller
      */
     public function edit($id)
     {
+        $pacientes = pacientesModel::find($id); //el cliente de aca es el mismo que el de abajo
+        $expediente = detallesModel::find($id); //el cliente de aca es el mismo que el de abajo
+
+        return view('detalleexp', compact('pacientes', 'expediente'));
     }
+
     /**
      * Update the specified resource in storage.
      *
@@ -78,6 +89,7 @@ class pacientesController extends Controller
     {
         //
     }
+
     /**
      * Remove the specified resource from storage.
      *

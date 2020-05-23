@@ -47,15 +47,6 @@
                                             <th>Expediente</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Kenn Enrique</td>
-                                            <td>Ayala</td>
-                                            <td>Valladares</td>
-                                            <td>18</td>
-                                            <td><a href=""> Ver expedinete</a></td>
-                                        </tr>
-                                    </tbody>
                                     <tfoot>
                                         <tr>
                                             <th>Nombre(s)</th>
@@ -65,9 +56,19 @@
                                             <th>Expediente</th>
                                         </tr>
                                     </tfoot>
+                                    <tbody>
+                                        @foreach($pacientes as $i)
+                                        <tr>
+                                            <td>{{$i->nombre_paciente}}</td>
+                                            <td>{{$i->apellido_paterno}}</td>
+                                            <td>{{$i->apellido_materno}}</td>
+                                            <td>{{$i->edad}}</td>
+                                            <td><a href="{{url('/lista-pacientes/'.$i->id_paciente.'/edit')}}"> Ver expediente</a></td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
                                 </table>
                             </div>
-
                             <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
@@ -87,7 +88,6 @@
             reserved.
         </footer>
         <!-- Control Sidebar -->
-
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->

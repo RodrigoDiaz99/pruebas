@@ -33,4 +33,4 @@ Route::get('/pacientes', function () {
 });
 Route::resource('/registro-paciente', 'pacientesController');
 Route::resource('/apertura-expediente', 'aperturaExpController');
-Route::resource('/lista-pacientes', 'detallesController');
+Route::resource('/lista-pacientes', 'pacientesController');
