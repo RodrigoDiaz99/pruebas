@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 
-class pacientesController extends Controller
+class detallesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,10 +18,8 @@ class pacientesController extends Controller
     public function index()
     {
         $pacientes = pacientesModel::paginate(1000000);
-
         $expediente = detallesModel::paginate(1000000);
-
-        return view('registerp', compact('pacientes'));
+        return view('pacientes', compact('pacientes', 'expediente'));
     }
 
     /**
@@ -43,18 +41,6 @@ class pacientesController extends Controller
     public function store(Request $request)
     {
         //
-        $datosPaciente = [
-            'nombre_paciente' => $request->nombre,
-            'apellido_paterno' => $request->app,
-            'apellido_materno' => $request->apm,
-            'edad' => $request->edad
-        ];
-
-
-        pacientesModel::insert($datosPaciente);
-
-
-        return redirect()->route('registro-paciente');
     }
 
     /**
@@ -76,7 +62,6 @@ class pacientesController extends Controller
      */
     public function edit($id)
     {
-
         $pacientes = pacientesModel::find($id); //el cliente de aca es el mismo que el de abajo
         $expediente = detallesModel::find($id); //el cliente de aca es el mismo que el de abajo
 

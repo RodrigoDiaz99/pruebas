@@ -44,14 +44,9 @@ Route::resource('/registro-paciente', 'pacientesController');
 
 
 Route::resource('/apertura-expediente', 'aperturaExpController');
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 Route::resource('/lista-pacientes', 'pacientesController');
-=======
+
+
 
 Route::resource('/consulta_expediente', 'detallesController');
->>>>>>> parent of 306c9fd... limpieza
-=======
-
-Route::resource('/consulta_expediente', 'detallesController');
->>>>>>> parent of 306c9fd... limpieza
