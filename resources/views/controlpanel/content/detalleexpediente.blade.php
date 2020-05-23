@@ -19,13 +19,13 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="{{$paciente->nombre_paciente}}">
+                            <input type="text" class="form-control" value="{{$pacientes->nombre_paciente}}">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Apellido paterno</label>
-                            <input type="text" class="form-control" value="{{$paciente->apellido_paterno}}">
+                            <input type="text" class="form-control" value="{{$pacientes->apellido_paterno}}">
                         </div>
                     </div>
                 </div><!-- /.container-fluid -->
@@ -36,17 +36,17 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Apellido materno</label>
-                                <input type="text" class="form-control" value="{{$paciente->apellido_materno}}">
+                                <input type="text" class="form-control" value="{{$pacientes->apellido_materno}}">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label>Fecha de nacimiento:</label>
+                                <label>Edad</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" value="04/06/1998" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                    <input type="text" class="form-control" value="{{$pacientes->edad}}" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                                 </div>
                             </div>
                             <!-- /.input group -->

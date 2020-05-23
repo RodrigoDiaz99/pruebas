@@ -33,7 +33,7 @@
     <!-- /.navbar -->
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-       <!--  Brand Logo
+        <!--  Brand Logo
         <a href="#" class="brand-link">
             <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
             <span class="brand-text font-weight-light">Carmen Andrea Reyes Reyes</span>
@@ -50,91 +50,87 @@
                 </div>
             </div>
             Sidebar Menu -->
-            <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                    <!-- Add icons to the links using the .nav-icon class
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                    <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon  far fa-calendar-alt"></i>
-                            <p>
-                                Agenda
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
+                <li class="nav-item has-treeview menu-open">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon  far fa-calendar-alt"></i>
+                        <p>
+                            Agenda
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
                         <li class="nav-item">
-                                <a href="/calendario-citas" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Citas</p>
-                                </a>
-                            </li> <li class="nav-item">
-                                <a href="/calendario-analisis" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Análisis</p>
-                                </a>
-                            </li>
+                            <a href="/calendario-citas" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Citas</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/calendario-analisis" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Análisis</p>
+                            </a>
+                        </li>
 
-                        </ul>
-                    </li>
+                    </ul>
+                </li>
 
-                    <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-female"></i>
-                            <p>
-                                Pacientes
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="/registro-paciente" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Registrar paciente</p>
-                                </a>
-                            </li>
+                <li class="nav-item has-treeview menu-open">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-female"></i>
+                        <p>
+                            Pacientes
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/registro-paciente" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Registrar paciente</p>
+                            </a>
+                        </li>
 
-                        </ul>
-                    </li>
+                    </ul>
+                </li>
 
-                    <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon far fa-edit"></i>
-                            <p>
-                                Expedientes
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="/apertura-expediente" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>
-                                        Apertura Expediente
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/consulta_expediente" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>
-                                        Consulta Expediente
-                                    </p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-
-
-                </ul>
-            </nav>
-            <!-- /.sidebar-menu -->
+                <li class="nav-item has-treeview menu-open">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon far fa-edit"></i>
+                        <p>
+                            Expedientes
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/apertura-expediente" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>
+                                    Apertura Expediente
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/consulta_expediente" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>
+                                    Consulta Expediente
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
         </div>
         <!-- /.sidebar -->
     </aside> <!-- Bootstrap -->
-    <script src="../../dist/js/reloj.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery UI -->
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
