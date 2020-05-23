@@ -101,7 +101,7 @@
                         <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem velit sunt cupiditate sapiente alias maiores nulla, ipsa, nesciunt dolores reiciendis accusamus animi eaque, ratione ipsam in doloremque possimus neque.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" align="center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-laptop-medical text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Papanicolao</h3>
