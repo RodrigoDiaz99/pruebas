@@ -14,73 +14,75 @@
                 <h3 class="card-title">Registro de paciente</h3>
             </div>
             <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                            <label>Nombre(s)</label>
-                            <input type="text" class="form-control" placeholder="Nombre(s)">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Nombre(s)</label>
+                                <input type="text" class="form-control" placeholder="Nombre(s)" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>Apellido paterno</label>
-                            <input type="text" class="form-control" placeholder="Apellido paterno">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>Apellido materno</label>
-                            <input type="text" class="form-control" placeholder="Apellido materno">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>Fecha de nacimiento:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                                </div>
-                                <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Apellido paterno</label>
+                                <input type="text" class="form-control" placeholder="Apellido paterno" required>
                             </div>
                         </div>
                     </div>
-                    <!-- /.input group -->
-                </div>
-                <div class="row">
-                    <!-- /.form group -->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Número telefónico:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                                </div>
-                                <input type="text" class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Apellido materno</label>
+                                <input type="text" class="form-control" placeholder="Apellido materno" required>
                             </div>
-                            <!-- /.input group -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Edad</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                    <input required type="number" min="0" step="1" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                    <div class="row">
+                        <!-- /.form group -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Número telefónico:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" style="width: auto;" id="phoneNumber">
+                                </div>
+                                <!-- /.input group -->
+                            </div>
+                        </div>
+                        <!-- /.form group -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Estado</label>
+                                <select class="form-control" style="width: max-content;">
+                                    <option selected="selected">Mérida</option>
+                                    <option>Alaskaguamas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Agregar paciente</button>
+                                <button type=" " class="btn btn-danger">Limpiar datos</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- /.form group -->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Estado</label>
-                            <select class="form-control" style="width: max-content;">
-                                <option selected="selected">Mérida</option>
-                                <option>Alaskaguamas</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                            <button type=" " class="btn btn-success">Agregar paciente</button>
-                            <button type=" " class="btn btn-danger">Limpiar datos</button>
-                        </div>
-                    </div>
-                </div>
+                </form>
                 <!-- /.card-body -->
             </div>
         </div>
@@ -105,6 +107,9 @@
             $('#datemask2').inputmask('mm/dd/yyyy', {
                 'placeholder': 'mm/dd/yyyy'
             })
+            //Phonemask
+            $('#phoneNumber').inputmask("(999) 999-9999");
+
             //Money Euro
             $('[data-mask]').inputmask()
             //Date range picker

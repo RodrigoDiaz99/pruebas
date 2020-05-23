@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 
-class detallesController extends Controller
+class aperturaExpController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +19,7 @@ class detallesController extends Controller
     {
         $pacientes = pacientesModel::paginate(1000000);
         $expediente = detallesModel::paginate(1000000);
-        return view('expediente', compact('pacientes', 'expediente'));
+        return view('aperturaexpediente', compact('pacientes', 'expediente'));
     }
 
     /**

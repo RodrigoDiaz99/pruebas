@@ -37,9 +37,9 @@ Route::get('/calendario-citas', function () {
 Route::get('/calendario-analisis', function () {
     return view('citas');
 });
-Route::get('/apertura-expediente', function () {
-    return view('aperturaexpediente');
-});
-Route::resource('/consulta_expediente', 'pacientesController');
+
+Route::resource('/apertura-expediente', 'aperturaExpController');
+
+Route::resource('/consulta_expediente', 'detallesController');
 
 

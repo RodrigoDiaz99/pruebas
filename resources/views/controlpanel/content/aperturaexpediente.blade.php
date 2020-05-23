@@ -13,66 +13,21 @@
                 <h3 class="card-title">Apertura de expediente</h3>
             </div>
             <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                            <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="Karen Elizabeth">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>Apellido paterno</label>
-                            <input type="text" class="form-control" value="Ayala">
-                        </div>
-                    </div>
-                </div><!-- /.container-fluid -->
-                </section>
+                
                 <!-- Main content -->
                 <section class="content">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>Paciente</label>
+                                    <input type="text" class="form-control" value="Será combo box de lista de paciente xd">
+                                </div>
+                            </div>
+                            
+                        </div><!-- /.container-fluid -->
                     <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>Apellido materno</label>
-                                <input type="text" class="form-control" value="Valladares">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>Fecha de nacimiento:</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                                    </div>
-                                    <input type="text" class="form-control" value="04/06/1998" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
-                                </div>
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <!-- /.form group -->
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Número telefónico:</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                                    </div>
-                                    <input type="text" value="9992556950" class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-                        </div>
-                        <!-- /.form group -->
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Estado</label>
-                                <select class="form-control" style="width: max-content;">
-                                    <option selected="selected">Yucatán</option>
-                                    <option>Alaskaguamas</option>
-                                </select>
-                            </div>
-                        </div>
+                    
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">

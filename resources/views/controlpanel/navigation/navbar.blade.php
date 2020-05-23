@@ -9,23 +9,23 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet" href="/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="{{ asset('css/tempusdominus-bootstrap-4.min.css') }}">
     <!-- iCheck -->
-    <link rel="stylesheet" href="/css/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('css/icheck-bootstrap.min.css') }}">
     <!-- JQVMap -->
-    <link rel="stylesheet" href="/css/jqvmap.min.css">
+    <link rel="stylesheet" href="{{ asset('css/jqvmap.min.css') }}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="/css/adminlte.min.css">
+    <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="{{ asset('css/OverlayScrollbars.min.css') }}">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="/css/daterangepicker.css">
+    <link rel="stylesheet" href="{{ asset('css/daterangepicker.css') }}">
     <!-- summernote -->
-    <link rel="stylesheet" href="/css/summernote-bs4.css">
+    <link rel="stylesheet" href="{{ asset('css/summernote-bs4.css') }}">
     <!-- Google Font: Source Sans Pro -->
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -47,17 +47,19 @@
     </nav>
     <!-- /.navbar -->
     <!-- jQuery -->
-    <script src="../../dist/js/reloj.js"></script>
-    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="{{ asset('dist/js/reloj.js') }}"></script>
+    <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- DataTables -->
-    <script src="../../plugins/datatables/jquery.dataTables.js"></script>
-    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="{{ asset('dist/js/adminlte.min.js') }}"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
+    <script src="{{ asset('dist/js/demo.js') }}"></script>
+
+
 
     <script>
         $(function() {
