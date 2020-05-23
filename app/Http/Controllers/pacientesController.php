@@ -19,8 +19,12 @@ class pacientesController extends Controller
     {
         $pacientes = pacientesModel::paginate(1000000);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $expediente = detallesModel::paginate(1000000);
         return view('pacientes', compact('pacientes', 'expediente'));
+=======
+         return view('registerp',compact('pacientes'));
+>>>>>>> parent of 306c9fd... limpieza
 =======
          return view('registerp',compact('pacientes'));
 >>>>>>> parent of 306c9fd... limpieza
@@ -79,10 +83,15 @@ class pacientesController extends Controller
     public function edit($id)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pacientes = pacientesModel::find($id); //el cliente de aca es el mismo que el de abajo
         $expediente = detallesModel::find($id); //el cliente de aca es el mismo que el de abajo
 
         return view('detalleexp', compact('pacientes', 'expediente'));
+=======
+      
+
+>>>>>>> parent of 306c9fd... limpieza
 =======
       
 
