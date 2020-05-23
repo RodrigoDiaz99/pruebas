@@ -74,8 +74,10 @@
                                 <p>Análisis</p>
                             </a>
                         </li>
+
                     </ul>
                 </li>
+
                 <li class="nav-item has-treeview menu-open">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-female"></i>
@@ -91,16 +93,10 @@
                                 <p>Registrar paciente</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/lista-pacientes" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>
-                                    Lista de pacientes
-                                </p>
-                            </a>
-                        </li>
+
                     </ul>
                 </li>
+
                 <li class="nav-item has-treeview menu-open">
                     <a href="#" class="nav-link">
                         <i class="nav-icon far fa-edit"></i>
@@ -118,6 +114,14 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="/consulta_expediente" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>
+                                    Consulta Expediente
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -126,6 +130,7 @@
         </div>
         <!-- /.sidebar -->
     </aside> <!-- Bootstrap -->
+
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- jQuery UI -->
     <script src="{{ asset('plugins/jquery-ui/jquery-ui.min.js') }}"></script>
