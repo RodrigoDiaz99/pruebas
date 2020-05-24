@@ -58,8 +58,10 @@
                             <div class="form-group">
                                 <label>Categoría</label>
                                 <select class="form-control" style="width: max-content;">
-                                    <option selected="selected">Embarazo</option>
-                                    <option>Embarazos</option>
+                                    <option selected="selected">- Seleccione -</option>
+                                    @foreach($categoria as $i)
+                                    <option>{{$i->categoria}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>

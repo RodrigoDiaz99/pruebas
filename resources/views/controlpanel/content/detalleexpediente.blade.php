@@ -98,10 +98,8 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Categoría</label>
-                                <select class="form-control" style="width: max-content;">
-                                    <option selected="selected">Embarazo</option>
-                                    <option>Embarazos</option>
-                                </select>
+                                <input type="text" class="form-control" value=" " data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+{{$idcatfind}}
                             </div>
                         </div>
                     </div>

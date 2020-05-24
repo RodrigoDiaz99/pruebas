@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\pacientesModel;
 use App\detallesModel;
+use App\categoriaModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -19,7 +20,9 @@ class aperturaExpController extends Controller
     {
         $pacientes = pacientesModel::paginate(1000000);
         $expediente = detallesModel::paginate(1000000);
-        return view('aperturaexpediente', compact('pacientes', 'expediente'));
+        $categoria = categoriaModel::paginate(1000000);
+
+        return view('aperturaexpediente', compact('pacientes', 'expediente', 'categoria'));
     }
 
     /**
@@ -62,8 +65,8 @@ class aperturaExpController extends Controller
      */
     public function edit($id)
     {
-        $pacientes = pacientesModel::find($id); //el cliente de aca es el mismo que el de abajo
-        $expediente = detallesModel::find($id); //el cliente de aca es el mismo que el de abajo
+        $pacientes = pacientesModel::find($id);
+        $expediente = detallesModel::find($id);
 
         return view('detalleexp', compact('pacientes', 'expediente'));
     }

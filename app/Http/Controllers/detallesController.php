@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\categoriaModel;
 use App\pacientesModel;
 use App\detallesModel;
 use App\Http\Controllers\Controller;
@@ -17,8 +18,8 @@ class detallesController extends Controller
      */
     public function index()
     {
-        $pacientes = pacientesModel::paginate(1000000);
-        $expediente = detallesModel::paginate(1000000);
+        $pacientes = pacientesModel::all();
+        $expediente = detallesModel::all();
         return view('pacientes', compact('pacientes', 'expediente'));
     }
 
@@ -62,8 +63,9 @@ class detallesController extends Controller
      */
     public function edit($id)
     {
-        $pacientes = pacientesModel::find($id); //el cliente de aca es el mismo que el de abajo
-        $expediente = detallesModel::find($id); //el cliente de aca es el mismo que el de abajo
+        $pacientes = pacientesModel::find($id);
+        $expediente = detallesModel::find($id);
+               
 
         return view('detalleexp', compact('pacientes', 'expediente'));
     }

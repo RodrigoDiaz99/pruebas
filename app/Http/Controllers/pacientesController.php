@@ -17,11 +17,7 @@ class pacientesController extends Controller
      */
     public function index()
     {
-        $pacientes = pacientesModel::paginate(1000000);
-
-        $expediente = detallesModel::paginate(1000000);
-
-        return view('registerp', compact('pacientes'));
+        return view('registerp');
     }
 
     /**
