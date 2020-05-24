@@ -98,8 +98,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Categoría</label>
-                                <input type="text" class="form-control" value=" " data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
-{{$idcatfind}}
+                                <input type="text" class="form-control" value="{{$categoria->categoria}}">
                             </div>
                         </div>
                     </div>
