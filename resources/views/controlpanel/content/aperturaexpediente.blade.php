@@ -13,198 +13,200 @@
                 <h3 class="card-title">Apertura de expediente</h3>
             </div>
             <div class="card-body">
+                <form action="{{route('apertura-expediente.store')}}" method="POST">
+                    @csrf
+                    <!-- Main content -->
+                    <section class="content">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>Paciente</label>
+                                    <select class="form-control" style="width: max-content;">
+                                        <option selected="selected">- Seleccione -</option>
+                                        @foreach($pacientes as $i)
+                                        <option>{{$i->nombre_paciente}} {{$i->apellido_paterno}} {{$i->apellido_materno}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
 
-                <!-- Main content -->
-                <section class="content">
-                    <div class="row">
+                        </div><!-- /.container-fluid -->
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>Antecedentes</label>
+                                    <input required type="text" value="" class="form-control" placeholder="Antecedentes">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>Peso</label>
+                                    <input required type="text" value="" class="form-control" placeholder="Peso">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>Estatura</label>
+                                    <input required type="text" value="" class="form-control" placeholder="Estatura">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Categoría</label>
+                                    <select class="form-control" style="width: max-content;">
+                                        <option selected="selected">- Seleccione -</option>
+                                        @foreach($categoria as $i)
+                                        <option>{{$i->categoria}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Inicio Radios-->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group clearfix">
+                                    <label for="radioDiabetes">
+                                        Diabetes
+                                    </label>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioDiabetesSi" name="r1">
+                                        <label for="radioDiabetesSi"> Sí
+                                        </label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioDiabetesNo" name="r1" checked>
+                                        <label for="radioDiabetesNo">No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group clearfix">
+                                    <label for="radioTBP">
+                                        TB. Pulmonar
+                                    </label>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioTBPSi" name="r2">
+                                        <label for="radioTBPSi"> Sí
+                                        </label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioTBPNo" name="r2" checked>
+                                        <label for="radioTBPNo">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group clearfix">
+                                    <label for="radioInterQ">
+                                        Inter. Quirúrgica
+                                    </label>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioInterQSi" name="r3">
+                                        <label for="radioInterQSi"> Sí
+                                        </label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioInterQNo" name="r3" checked>
+                                        <label for="radioInterQNo">No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group clearfix">
+                                    <label for="radioPatP">
+                                        Patol. Psiquiátrica
+                                    </label>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioPatPSi" name="r4">
+                                        <label for="radioPatPSi"> Sí
+                                        </label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioPatPNo" name="r4" checked>
+                                        <label for="radioPatPNo">No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group clearfix">
+                                    <label for="radioConvul">
+                                        Convulsiones </label>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioConvulSi" name="r5">
+                                        <label for="radioConvulSi"> Sí
+                                        </label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioConvulNo" name="r5" checked>
+                                        <label for="radioConvulNo">No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group clearfix">
+                                    <label for="radioOtro">
+                                        Otros (Especifíque)
+                                    </label>
+                                    <div class="icheck-primary d-inline">
+                                        <input class type="radio" id="radioOtroSi" name="r6">
+                                        <label for="radioOtroSi"> Sí
+                                        </label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioOtroNo" name="r6" checked>
+                                        <label for="radioOtroNo">No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group clearfix">
+                                    <label for="radioLueticas">
+                                        Lueticas
+                                    </label>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioLueticasSi" name="r7">
+                                        <label for="radioLueticasSi"> Sí
+                                        </label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioLueticasNo" name="r7" checked>
+                                        <label for="radioLueticasNo">No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
-                                <label>Paciente</label>
-                                <select class="form-control" style="width: max-content;">
-                                    <option selected="selected">- Seleccione -</option>
-                                    @foreach($pacientes as $i)
-                                    <option>{{$i->nombre_paciente}} {{$i->apellido_paterno}} {{$i->apellido_materno}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-
-                    </div><!-- /.container-fluid -->
-                    <div class="row">
-
-                        <div class="col-sm-6">
-                            <!-- text input -->
-                            <div class="form-group">
-                                <label>Antecedentes</label>
-                                <input required type="text" value="" class="form-control" placeholder="Antecedentes">
+                                <button type=" " class="btn btn-primary">Aperturar expediente</button>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
-                                <label>Peso</label>
-                                <input required type="text" value="" class="form-control" placeholder="Peso">
+                                <button type=" " class="btn btn-danger">Cancelar</button>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <!-- text input -->
-                            <div class="form-group">
-                                <label>Estatura</label>
-                                <input required type="text" value="" class="form-control" placeholder="Estatura">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Categoría</label>
-                                <select class="form-control" style="width: max-content;">
-                                    <option selected="selected">- Seleccione -</option>
-                                    @foreach($categoria as $i)
-                                    <option>{{$i->categoria}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Inicio Radios-->
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group clearfix">
-                                <label for="radioDiabetes">
-                                    Diabetes
-                                </label>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioDiabetesSi" name="r1">
-                                    <label for="radioDiabetesSi"> Sí
-                                    </label>
-                                </div>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioDiabetesNo" name="r1" checked>
-                                    <label for="radioDiabetesNo">No
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="form-group clearfix">
-                                <label for="radioTBP">
-                                    TB. Pulmonar
-                                </label>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioTBPSi" name="r2">
-                                    <label for="radioTBPSi"> Sí
-                                    </label>
-                                </div>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioTBPNo" name="r2" checked>
-                                    <label for="radioTBPNo">No
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- /.card -->
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group clearfix">
-                                <label for="radioInterQ">
-                                    Inter. Quirúrgica
-                                </label>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioInterQSi" name="r3">
-                                    <label for="radioInterQSi"> Sí
-                                    </label>
-                                </div>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioInterQNo" name="r3" checked>
-                                    <label for="radioInterQNo">No
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group clearfix">
-                                <label for="radioPatP">
-                                    Patol. Psiquiátrica
-                                </label>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioPatPSi" name="r4">
-                                    <label for="radioPatPSi"> Sí
-                                    </label>
-                                </div>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioPatPNo" name="r4" checked>
-                                    <label for="radioPatPNo">No
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group clearfix">
-                                <label for="radioConvul">
-                                    Convulsiones </label>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioConvulSi" name="r5">
-                                    <label for="radioConvulSi"> Sí
-                                    </label>
-                                </div>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioConvulNo" name="r5" checked>
-                                    <label for="radioConvulNo">No
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="form-group clearfix">
-                                <label for="radioOtro">
-                                    Otros (Especifíque)
-                                </label>
-                                <div class="icheck-primary d-inline">
-                                    <input class type="radio" id="radioOtroSi" name="r6">
-                                    <label for="radioOtroSi"> Sí
-                                    </label>
-                                </div>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioOtroNo" name="r6" checked>
-                                    <label for="radioOtroNo">No
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="form-group clearfix">
-                                <label for="radioLueticas">
-                                    Lueticas
-                                </label>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioLueticasSi" name="r7">
-                                    <label for="radioLueticasSi"> Sí
-                                    </label>
-                                </div>
-                                <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioLueticasNo" name="r7" checked>
-                                    <label for="radioLueticasNo">No
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                            <button type=" " class="btn btn-primary">Aperturar expediente</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                            <button type=" " class="btn btn-danger">Cancelar</button>
-                        </div>
-                    </div>
-                    <!-- /.card-body -->
+                        <!-- /.card-body -->
+                </form>
             </div>
         </div>
         <!-- /.content-wrapper -->

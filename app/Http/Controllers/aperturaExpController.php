@@ -44,6 +44,18 @@ class aperturaExpController extends Controller
     public function store(Request $request)
     {
         //
+        $datosPaciente = [
+            'nombre_paciente' => $request->nombre,
+            'apellido_paterno' => $request->app,
+            'apellido_materno' => $request->apm,
+            'edad' => $request->edad
+        ];
+
+
+        pacientesModel::insert($datosPaciente);
+
+
+        return redirect()->route('registro-paciente');
     }
 
     /**
