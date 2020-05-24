@@ -1155,7 +1155,7 @@ class Router implements BindingRegistrar, RegistrarContract
         $this->post('logout', 'Auth\LoginController@logout')->name('logout');
 
         // Registration Routes...
-        if ($options['register'] ?? true) {
+        if ($options['register'] ?? false) {
             $this->get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
             $this->post('register', 'Auth\RegisterController@register');
         }
