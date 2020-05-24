@@ -65,9 +65,10 @@ class detallesController extends Controller
     {
         $pacientes = pacientesModel::find($id);
         $expediente = detallesModel::find($id);
-               
+        $categoria = categoriaModel::find($pacientes->id_categoria);
+        
 
-        return view('detalleexp', compact('pacientes', 'expediente'));
+        return view('detalleexp', compact('pacientes', 'expediente', 'categoria'));
     }
 
     /**
