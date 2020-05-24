@@ -1161,7 +1161,8 @@ class Router implements BindingRegistrar, RegistrarContract
         }
 
         // Password Reset Routes...
-        if ($options['reset'] ?? true) {
+        if ($options['reset'] ?? false
+        ) {
             $this->resetPassword();
         }
 
