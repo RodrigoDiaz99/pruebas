@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-    <!--scripts-->
-    <script src="//use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
-
     <title>Carmen Andrea Reyes Reyes</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,12 +11,10 @@
     <meta name="keywords" content="medicina, salud, mujeres, ginecologia, obstetricia, papanicolao, lactancia, embarazos, facebook, twitter, yucatan">
     <meta name="canonical" hreflang="x-default">
 
-<!-- icono)-->
+
     <link rel="icon" type="image/png" href="//res.cloudinary.com/hmyqulmkc/image/upload/v1585007390/icon_dwqmji.png" />
-
-    <!--Begin styles-->
     <!-- Font Awesome icons (free version)-->
-
+    <script src="//use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
 
     <!-- Google fonts-->
     <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
@@ -28,7 +23,6 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="/css/styles.css" rel="stylesheet">
-    <!--end styles-->
 </head>
 
 <body id="page-top">
@@ -40,7 +34,6 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
 
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <!--begin menu-->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
 
@@ -48,7 +41,7 @@
                     @if (Route::has('login'))
                     <div class="flex-center position-ref full-height">
                         @auth
-                        <a class="nav-link js-scroll-trigger" href="{{ url('/home') }}"></a>
+                        <a class="nav-link js-scroll-trigger" href="{{ url('/admin') }}"></a>
                         @else
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('login') }}">Acceso</a></li>
                         @endauth
@@ -59,7 +52,6 @@
             </div>
         </div>
     </nav>
-    <!--end menu-->
     <!-- Masthead-->
     <header class="masthead">
         <div class="container h-100">
@@ -94,14 +86,14 @@
             <h2 class="text-center mt-0">A tu servicio</h2>
             <hr class="divider my-4" />
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-cen ter">
+                <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-briefcase-medical text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Ginecologia</h3>
                         <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem velit sunt cupiditate sapiente alias maiores nulla, ipsa, nesciunt dolores reiciendis accusamus animi eaque, ratione ipsam in doloremque possimus neque.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center" align="center">
+                <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-laptop-medical text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Papanicolao</h3>
