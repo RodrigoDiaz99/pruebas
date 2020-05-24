@@ -15,6 +15,11 @@ class ChecarSesion
      */
     public function handle($request, Closure $next)
     {
+        if ($request->age <= 200) {
+            return redirect('principal');
+        }
+
+
         return $next($request);
     }
 }
