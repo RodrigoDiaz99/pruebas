@@ -42,7 +42,7 @@ Route::resource('/registro-paciente', 'pacientesController');
 
 Route::resource('/apertura-expediente', 'aperturaExpController');
 
-Route::resource('/lista-pacientes', 'pacientesController');
+Route::resource('/lista-pacientes', 'detallesController');
 
 
 

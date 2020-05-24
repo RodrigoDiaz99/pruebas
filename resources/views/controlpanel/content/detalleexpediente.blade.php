@@ -19,13 +19,13 @@
                         <!-- text input -->
                         <div class="form-group">
                             <label>Nombre(s)</label>
-                            <input type="text" class="form-control" value="{{$pacientes->nombre_paciente}}">
+                            <input disabled type="text" class="form-control" value="{{$pacientes->nombre_paciente}}">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Apellido paterno</label>
-                            <input type="text" class="form-control" value="{{$pacientes->apellido_paterno}}">
+                            <input disabled type="text" class="form-control" value="{{$pacientes->apellido_paterno}}">
                         </div>
                     </div>
                 </div><!-- /.container-fluid -->
@@ -36,7 +36,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Apellido materno</label>
-                                <input type="text" class="form-control" value="{{$pacientes->apellido_materno}}">
+                                <input disabled type="text" class="form-control" value="{{$pacientes->apellido_materno}}">
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -46,7 +46,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" value="{{$pacientes->edad}}" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                    <input disabled type="text" class="form-control" value="{{$pacientes->edad}}" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                                 </div>
                             </div>
                             <!-- /.input group -->
@@ -59,7 +59,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                     </div>
-                                    <input type="text" value="{{$expediente->telefono}}" class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
+                                    <input disabled type="text" value="{{$expediente->telefono}}" class="form-control" style="width: auto;" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
                                 </div>
                                 <!-- /.input group -->
                             </div>
@@ -78,27 +78,27 @@
                             <!-- text input -->
                             <div class="form-group">
                                 <label>Antecedentes</label>
-                                <input type="text" value="Alergias, hipertensión" class="form-control" placeholder="Antecedentes">
+                                <input disabled type="text" value="Alergias, hipertensión" class="form-control" placeholder="Antecedentes">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
                                 <label>Peso</label>
-                                <input type="text" value="9999kg" class="form-control" placeholder="Antecedentes">
+                                <input disabled type="text" value="9999kg" class="form-control" placeholder="Antecedentes">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
                                 <label>Estatura</label>
-                                <input type="text" value="1.99m" class="form-control" placeholder="Antecedentes">
+                                <input disabled type="text" value="1.99m" class="form-control" placeholder="Antecedentes">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Categoría</label>
-                                <input type="text" class="form-control" value="{{$categoria->categoria}}">
+                                <input disabled type="text" class="form-control" value="{{$categoria->categoria}}">
                             </div>
                         </div>
                     </div>
@@ -110,12 +110,12 @@
                                     Diabetes
                                 </label>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioDiabetesSi" name="r1">
+                                    <input disabled type="radio" id="radioDiabetesSi" name="r1">
                                     <label for="radioDiabetesSi"> Sí
                                     </label>
                                 </div>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioDiabetesNo" name="r1" checked>
+                                    <input disabled type="radio" id="radioDiabetesNo" name="r1" checked>
                                     <label for="radioDiabetesNo">No
                                     </label>
                                 </div>
@@ -128,12 +128,12 @@
                                     TB. Pulmonar
                                 </label>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioTBPSi" name="r2">
+                                    <input disabled type="radio" id="radioTBPSi" name="r2">
                                     <label for="radioTBPSi"> Sí
                                     </label>
                                 </div>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioTBPNo" name="r2" checked>
+                                    <input disabled type="radio" id="radioTBPNo" name="r2" checked>
                                     <label for="radioTBPNo">No
                                     </label>
                                 </div>
@@ -146,12 +146,12 @@
                                     Inter. Quirúrgica
                                 </label>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioInterQSi" name="r3">
+                                    <input disabled type="radio" id="radioInterQSi" name="r3">
                                     <label for="radioInterQSi"> Sí
                                     </label>
                                 </div>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioInterQNo" name="r3" checked>
+                                    <input disabled type="radio" id="radioInterQNo" name="r3" checked>
                                     <label for="radioInterQNo">No
                                     </label>
                                 </div>
@@ -163,12 +163,12 @@
                                     Patol. Psiquiátrica
                                 </label>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioPatPSi" name="r4">
+                                    <input disabled type="radio" id="radioPatPSi" name="r4">
                                     <label for="radioPatPSi"> Sí
                                     </label>
                                 </div>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioPatPNo" name="r4" checked>
+                                    <input disabled type="radio" id="radioPatPNo" name="r4" checked>
                                     <label for="radioPatPNo">No
                                     </label>
                                 </div>
@@ -179,12 +179,12 @@
                                 <label for="radioConvul">
                                     Convulsiones </label>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioConvulSi" name="r5">
+                                    <input disabled type="radio" id="radioConvulSi" name="r5">
                                     <label for="radioConvulSi"> Sí
                                     </label>
                                 </div>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioConvulNo" name="r5" checked>
+                                    <input disabled type="radio" id="radioConvulNo" name="r5" checked>
                                     <label for="radioConvulNo">No
                                     </label>
                                 </div>
@@ -197,12 +197,12 @@
                                     Otros (Especifíque)
                                 </label>
                                 <div class="icheck-primary d-inline">
-                                    <input class type="radio" id="radioOtroSi" name="r6">
+                                    <input disabled class type="radio" id="radioOtroSi" name="r6">
                                     <label for="radioOtroSi"> Sí
                                     </label>
                                 </div>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioOtroNo" name="r6" checked>
+                                    <input disabled type="radio" id="radioOtroNo" name="r6" checked>
                                     <label for="radioOtroNo">No
                                     </label>
                                 </div>
@@ -215,12 +215,12 @@
                                     Lueticas
                                 </label>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioLueticasSi" name="r7">
+                                    <input disabled type="radio" id="radioLueticasSi" name="r7">
                                     <label for="radioLueticasSi"> Sí
                                     </label>
                                 </div>
                                 <div class="icheck-primary d-inline">
-                                    <input type="radio" id="radioLueticasNo" name="r7" checked>
+                                    <input disabled type="radio" id="radioLueticasNo" name="r7" checked>
                                     <label for="radioLueticasNo">No
                                     </label>
                                 </div>

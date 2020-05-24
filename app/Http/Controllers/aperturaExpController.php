@@ -18,9 +18,9 @@ class aperturaExpController extends Controller
      */
     public function index()
     {
-        $pacientes = pacientesModel::paginate(1000000);
-        $expediente = detallesModel::paginate(1000000);
-        $categoria = categoriaModel::paginate(1000000);
+        $pacientes = pacientesModel::all();
+        $expediente = detallesModel::all();
+        $categoria = categoriaModel::all();
 
         return view('aperturaexpediente', compact('pacientes', 'expediente', 'categoria'));
     }
