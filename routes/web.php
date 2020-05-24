@@ -17,10 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-
+Route::get('/admin', 'HomeController@index')->name('home');
 
 Route::get('/registro-paciente', function () {
     return view('registerp');
@@ -39,11 +36,8 @@ Route::get('/pacientes', function () {
 
 Route::resource('/registro-paciente', 'pacientesController');
 
-
 Route::resource('/apertura-expediente', 'aperturaExpController');
 
 Route::resource('/lista-pacientes', 'detallesController');
-
-
 
 Route::resource('/consulta_expediente', 'detallesController');

@@ -11,6 +11,11 @@ use Illuminate\Http\Request;
 
 class detallesController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -66,7 +71,7 @@ class detallesController extends Controller
         $pacientes = pacientesModel::find($id);
         $expediente = detallesModel::find($id);
         $categoria = categoriaModel::find($pacientes->id_categoria);
-        
+
 
         return view('detalleexp', compact('pacientes', 'expediente', 'categoria'));
     }
