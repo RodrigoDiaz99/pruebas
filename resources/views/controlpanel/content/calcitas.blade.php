@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 3 | Calendario</title>
   <!-- Tell the browser to be responsive to screen width -->
@@ -93,7 +94,6 @@
         <div class="modal-body">
           <!-- Contenido del modal -->
           <div class="form-row">
-            @csrf
             <div class="form-group col-md-12">
               <label>id</label>
               <input class="form-control" type="text" name="txtID" id="txtID">
@@ -127,7 +127,6 @@
         <!-- Footer modal (botones) -->
         <div class="modal-footer">
           <button id="btnAgregar" type="button" class="btn btn-success">Agregar</button>
-
           <button id="btnModificar" type="button" class="btn btn-success">Modificar</button>
           <button id="btnBorrar" type="button" class="btn btn-danger">Borrar</button>
           <button id="btnCancelar" type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -136,9 +135,6 @@
     </div>
   </div>
 </body>
-
-
-
 
 <!-- Script de fullCalendar -->
 <script>
@@ -163,25 +159,45 @@
     calendar.render();
 
     $('#btnAgregar').click(function() {
-      guardar("POST");
+      saveDB();
+
+
     });
 
-    function guardar(method) {
-      nuevoEvento = {
-        id: $('#txtID').val(),
-        title: $('#txtTitle').val(),
-        description: $('#txtDescription').val(),
-        color: $('#txtColor').val(),
-        txtColor: '#FFFFFF',
-        start: $('#txtFecha').val() + $('#txtHora').val(),
-        end: $('#txtFecha').val() + $('#txtHora').val(),
-        '_method': method
 
-      }
-      console.log(nuevoEvento);
+    function saveDB() {
 
+      $.ajaxSetup({
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+      });
+
+      $.ajax({
+        type: "POST",
+        url: "{{ url('/calendario-citas')}}/store",
+
+        data: {
+          id_agenda: $('#txtID').val(),
+          title: $('#txtTitle').val(),
+          description: $('#txtDescription').val(),
+          color: $('#txtColor').val(),
+          txtColor: '#FFFFFF',
+          start: $('#txtFecha').val() + ' ' + $('#txtHora').val(),
+          end: $('#txtFecha').val() + $('#txtHora').val(),
+          "_token": $("meta[name='csrf-token']").attr("content"),
+         },
+
+        success: function(msg) {
+          console.log(msg);
+
+        },
+        error: function(data) {
+          alert("failed");
+ 
+        }
+      })
     }
-
   });
 </script>
 

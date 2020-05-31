@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Pagina oficial del consultorio de la doctora Carmen Andrea Ryes Reyes" />
-    <meta name="author" content="Carmen Andrea Reyes Reyes" >
+    <meta name="author" content="Carmen Andrea Reyes Reyes">
     <meta name="Copyrigth" content="Carmen Andrea Reyes Reyes">
     <meta name="keywords" content="medicina, salud, mujeres, ginecologia, obstetricia, papanicolao, lactancia, embarazos, facebook, twitter, yucatan">
     <meta name="canonical" hreflang="x-default">
@@ -75,7 +75,7 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="text-white mt-0">Tenemos lo que necesitas</h2>
                     <hr class="divider light my-4" />
-                  <!--  <p class="text-white-50 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id at cumque necessitatibus ea porro nulla itaque cupiditate, praesentium ullam aperiam eaque beatae provident fugit quis nemo magni sed totam officiis.</p>-->
+                    <!--  <p class="text-white-50 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id at cumque necessitatibus ea porro nulla itaque cupiditate, praesentium ullam aperiam eaque beatae provident fugit quis nemo magni sed totam officiis.</p>-->
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Comenzemos!</a>
                 </div>
             </div>
@@ -116,14 +116,14 @@
                     </div>
                 </div>
                 <div align="center">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <i class="fas fa-4x fa-file-medical-alt text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Cirugia</h3>
-                        <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quia? Incidunt ut molestias debitis tenetur nihil eaque libero ipsam, autem maxime? Tempora provident fuga quia ullam ea minima, nesciunt quaerat!</p>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-file-medical-alt text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">Cirugia</h3>
+                            <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quia? Incidunt ut molestias debitis tenetur nihil eaque libero ipsam, autem maxime? Tempora provident fuga quia ullam ea minima, nesciunt quaerat!</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -135,7 +135,7 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="mt-0">¡Mantengámonos en contacto!</h2>
                     <hr class="divider my-4" />
-                  <!--  <p class="text-muted mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores delectus quas rerum voluptatem amet tenetur vitae minima hic rem, ex numquam natus harum, neque accusantium deserunt quod veritatis, voluptas alias?</p>-->
+                    <!--  <p class="text-muted mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores delectus quas rerum voluptatem amet tenetur vitae minima hic rem, ex numquam natus harum, neque accusantium deserunt quod veritatis, voluptas alias?</p>-->
                 </div>
             </div>
             <div class="row">

@@ -29,21 +29,21 @@ Route::get('/registro-paciente', function () {
 });
 
 
-
-Route::get('/calendario-analisis', function () {
-    return view('citas');
-});
+ 
 
 Route::get('/pacientes', function () {
     return view('pacientes');
 });
 
 Route::resource('/calendario-citas', 'agendaController');
+Route::post('/calendario-citas/store', 'agendaController@store');
+
 
 Route::resource('/registro-paciente', 'pacientesController');
 
 
 Route::resource('/apertura-expediente', 'aperturaExpController');
+
 
 Route::resource('/lista-pacientes', 'detallesController');
 
