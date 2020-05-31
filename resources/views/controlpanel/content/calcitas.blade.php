@@ -24,11 +24,6 @@
   <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/list/main.css') }}">
   <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/timegrid/main.css') }}">
 
-  <script src="{{ asset('plugins/fullCalendar/core/main.js') }}"></script>
-  <script src="{{ asset('plugins/fullCalendar/interaction/main.js') }}"></script>
-  <script src="{{ asset('plugins/fullCalendar/daygrid/main.js') }}"></script>
-  <script src="{{ asset('plugins/fullCalendar/list/main.js') }}"></script>
-  <script src="{{ asset('plugins/fullCalendar/timegrid/main.js') }}"></script>
 
 
 
@@ -137,6 +132,12 @@
 </body>
 
 <!-- Script de fullCalendar -->
+
+<script src="{{ asset('plugins/fullCalendar/core/main.js') }}"></script>
+<script src="{{ asset('plugins/fullCalendar/interaction/main.js') }}"></script>
+<script src="{{ asset('plugins/fullCalendar/daygrid/main.js') }}"></script>
+<script src="{{ asset('plugins/fullCalendar/list/main.js') }}"></script>
+<script src="{{ asset('plugins/fullCalendar/timegrid/main.js') }}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
@@ -186,7 +187,7 @@
           start: $('#txtFecha').val() + ' ' + $('#txtHora').val(),
           end: $('#txtFecha').val() + $('#txtHora').val(),
           "_token": $("meta[name='csrf-token']").attr("content"),
-         },
+        },
 
         success: function(msg) {
           console.log(msg);
@@ -194,7 +195,7 @@
         },
         error: function(data) {
           alert("failed");
- 
+
         }
       })
     }
