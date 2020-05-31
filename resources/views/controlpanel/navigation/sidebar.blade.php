@@ -69,7 +69,7 @@
                         <li class="nav-item">
                             <a href="/calendario-citas" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Citas</p>
+                                <p>Citas (WIP)</p>
                             </a>
                         </li>
                         <li class="nav-item">

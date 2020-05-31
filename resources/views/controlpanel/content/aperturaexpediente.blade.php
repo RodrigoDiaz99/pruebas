@@ -211,9 +211,8 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.0.2-pre
-            </div>
+            @yield('footer')
+        </footer>
     </div>
     </div>
     </div>

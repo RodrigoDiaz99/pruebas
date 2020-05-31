@@ -89,6 +89,9 @@
             </div>
         </div>
     </div>
+    <footer class="main-footer">
+        @yield('footer')
+    </footer>
     </div>
     <!-- /.card -->
 

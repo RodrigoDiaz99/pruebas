@@ -22,22 +22,22 @@
 </head>
 
 <body>
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Carmen Andrea Reyes Reyes') }}
-                </a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url('/') }}">
+                {{ config('app.name', 'Carmen Andrea Reyes Reyes') }}
+            </a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav mr-auto">
+                </ul>
             </div>
-        </nav>
-        <main class="py-4">
-            @yield('content')
-        </main>
+        </div>
+    </nav>
+    <main class="py-4">
+        @yield('content')
+    </main>
 </body>
 
 </html>

@@ -16,12 +16,21 @@
   <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
   <!-- fullCalendar 2.2.5 -->
-  <link rel="stylesheet" href="{{ asset('/css/fullcalendar.min.css') }}">
-  <script src="{{ asset('/js/moment.min.js') }}"></script>
-  <script src="{{ asset('/js/fullcalendar.min.js') }}"></script>
-  <script src="{{ asset('/js/fullCalendar-es.js') }}"></script>
-  <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/core/main.css') }}">
+  <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/daygrid/main.css') }}">
+  <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/list/main.css') }}">
+  <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/timegrid/main.css') }}">
+
+  <script src="{{ asset('plugins/fullCalendar/core/main.js') }}"></script>
+  <script src="{{ asset('plugins/fullCalendar/interaction/main.js') }}"></script>
+  <script src="{{ asset('plugins/fullCalendar/daygrid/main.js') }}"></script>
+  <script src="{{ asset('plugins/fullCalendar/list/main.js') }}"></script>
+  <script src="{{ asset('plugins/fullCalendar/timegrid/main.js') }}"></script>
+
+
+
 </head>
 <!-- Modal -->
 
@@ -51,7 +60,7 @@
           <div class="row">
             <!-- /.col -->
             <div class="card card-primary">
-              <div class="card-body p-0">
+              <div class="col-9">
                 <!-- THE CALENDAR -->
 
                 <div id="calendar"></div>
@@ -66,17 +75,9 @@
     </div><!-- /.container-fluid -->
     </section>
     <footer class="main-footer">
-      <div class="float-right d-none d-sm-block">
-        <b>Version</b> 3.0.2-pre
-      </div>
-      <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-      reserved.
+      @yield('footer')
     </footer>
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
+
   </div>
 
   <!-- Modal de agenda -->
@@ -91,44 +92,98 @@
         </div>
         <div class="modal-body">
           <!-- Contenido del modal -->
-          <div id="descripcionEvento"></div>
+          <div class="form-row">
+            @csrf
+            <div class="form-group col-md-12">
+              <label>id</label>
+              <input class="form-control" type="text" name="txtID" id="txtID">
+            </div>
+
+            <div class="form-group col-md-10">
+              <label>Titulo de evento</label>
+              <input class="form-control" type="text" name="txtTitle" id="txtTitle"> </div>
+
+            <div class="form-group col-md-2">
+              <label>Color</label>
+              <input class="form-control" type="color" name="txtColor" id="txtColor"> </div>
+
+
+            <div class="form-group col-md-6">
+              <label>Fecha</label>
+              <input class="form-control" type="text" name="txtFecha" id="txtFecha"> </div>
+
+            <div class="form-group col-md-6">
+              <label>Hora</label>
+              <input class="form-control" type="text" name="txtHora" id="txtHora"> </div>
+
+
+            <div class="form-group col-md-12">
+              <label>Descripción</label>
+              <textarea class="form-control" name="txtDescription" id="txtDescription" cols="30" rows="10"></textarea>
+            </div>
+
+          </div>
         </div>
+        <!-- Footer modal (botones) -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-success">Agregar</button>
-          <button type="button" class="btn btn-success">Modificar</button>
-          <button type="button" class="btn btn-danger">Borrar</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button id="btnAgregar" type="button" class="btn btn-success">Agregar</button>
+
+          <button id="btnModificar" type="button" class="btn btn-success">Modificar</button>
+          <button id="btnBorrar" type="button" class="btn btn-danger">Borrar</button>
+          <button id="btnCancelar" type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
 </body>
 
+
+
+
 <!-- Script de fullCalendar -->
 <script>
-  $(document).ready(
-    function() {
-      $('#calendar').fullCalendar({
-        // Script para cargar modal al hacer click a día en calendario.
-        dayClick: function(date, jsEvent, view) {
-          $('#descripcionEvento').html(' {{$agenda}}');
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: ['dayGrid', 'interaction', 'timeGrid', 'list'],
+      events: "{{ url('/calendario-citas/show') }}",
 
-          $("#modalCalendar").modal();
-        },
-        events: '{{$agenda}}',
-        //Events Inicio
+      dateClick: function(info) {
+        $('#txtFecha').val(info.dateStr)
+        $("#modalCalendar").modal();
+      },
 
-        //Fin,
-
-        eventClick: function(calEvent, jsEvent, view) {
-          $('#tituloEvento').html(calEvent.title);
-          $('#descripcionEvento').html(calEvent.description);
-          $('#modalCalendar').modal();
-
-        }
-      })
-
+      eventClick: function(info) {
+        $('#tituloEvento').html(info.title);
+        $('#descripcionEvento').html(info.description);
+        $('#modalCalendar').modal();
+      }
     });
+    calendar.setOption('locale', 'Es');
+    calendar.render();
+
+    $('#btnAgregar').click(function() {
+      guardar("POST");
+    });
+
+    function guardar(method) {
+      nuevoEvento = {
+        id: $('#txtID').val(),
+        title: $('#txtTitle').val(),
+        description: $('#txtDescription').val(),
+        color: $('#txtColor').val(),
+        txtColor: '#FFFFFF',
+        start: $('#txtFecha').val() + $('#txtHora').val(),
+        end: $('#txtFecha').val() + $('#txtHora').val(),
+        '_method': method
+
+      }
+      console.log(nuevoEvento);
+
+    }
+
+  });
 </script>
+
 
 </html>

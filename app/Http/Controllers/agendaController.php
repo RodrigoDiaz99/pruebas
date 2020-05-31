@@ -18,10 +18,7 @@ class agendaController extends Controller
 
     public function index()
     {
-        //
-        $agenda = agendaModel::all();
-
-        return view('citas', $agenda);
+        return view('citas');
     }
 
     /**
@@ -51,9 +48,11 @@ class agendaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
         //
+        $data['agenda'] = agendaModel::all();
+        return response()->json($data['agenda']);
     }
 
     /**

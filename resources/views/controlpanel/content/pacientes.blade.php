@@ -6,6 +6,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Carmen Andrea Reyes Reyes - Dashboard</title>
+    <style>
+         tr {
+            
+            text-transform: lowercase;
+        }
+
+        tr::first-letter {
+            text-transform: uppercase;
+
+        }
+    </style>
+</head>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -81,18 +93,18 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.0.2-pre
-            </div>
-            <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-            reserved.
-        </footer>
+      @yield('footer')
+    </footer>
         <!-- Control Sidebar -->
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
     <!-- page script -->
     <script>
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
         $(function() {
             $("#example1").DataTable();
             $('#example2').DataTable({

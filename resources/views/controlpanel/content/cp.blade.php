@@ -62,8 +62,8 @@
       <!-- /.content-header -->
               </div>
 
-    <footer class="main-footer">
-
+              <footer class="main-footer">
+      @yield('footer')
     </footer>
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
