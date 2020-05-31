@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\agendaController;
+
 Route::get('/', function () {
     return view('principal');
 });
@@ -26,9 +28,8 @@ Route::get('/registro-paciente', function () {
     return view('registerp');
 });
 
-Route::get('/calendario-citas', function () {
-    return view('citas');
-});
+
+
 Route::get('/calendario-analisis', function () {
     return view('citas');
 });
@@ -36,6 +37,8 @@ Route::get('/calendario-analisis', function () {
 Route::get('/pacientes', function () {
     return view('pacientes');
 });
+
+Route::resource('/calendario-citas', 'agendaController');
 
 Route::resource('/registro-paciente', 'pacientesController');
 
