@@ -10,10 +10,15 @@ use App\descPacientesModel;
 class descPacientesController extends Controller
 {
     //
-    function consultaDescPacientes(){
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    function consultaDescPacientes()
+    {
 
         $readpaciente = descPacientesModel::all();
-        return view('expediente', ['readpaciente'=>$readpaciente]);
-
+        return view('expediente', ['readpaciente' => $readpaciente]);
     }
 }
