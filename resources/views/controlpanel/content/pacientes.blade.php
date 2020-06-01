@@ -48,7 +48,7 @@
                                          <tr>
                                              <td>{{$i->nombre_paciente}}</td>
                                              <td>{{$i->apellido_paterno}}</td>
-                                             <td>{{$i->apellido_materno}}</td>
+                                              <td>{{$i->apellido_materno}}</td>
                                              <td>{{$i->edad}}</td>
                                              <td><a href="{{url('/lista-pacientes/'.$i->id_paciente.'/edit')}}"> Ver expediente</a></td>
                                          </tr>
