@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,42 +10,33 @@
 |
 */
 
-use App\Http\Controllers\agendaController;
 
 Route::get('/', function () {
     return view('principal');
 });
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-
 
 Route::get('/registro-paciente', function () {
     return view('registerp');
 });
-
-
- 
 
 Route::get('/pacientes', function () {
     return view('pacientes');
 });
 
 Route::resource('/calendario-citas', 'agendaController');
-Route::post('/calendario-citas/store', 'agendaController@store');
 
+Route::get('/calendario-analisis', function () {
+    return view('citas');
+});
+
+Route::post('/calendario-citas/store', 'agendaController@store');
 
 Route::resource('/registro-paciente', 'pacientesController');
 
-
 Route::resource('/apertura-expediente', 'aperturaExpController');
 
-
 Route::resource('/lista-pacientes', 'detallesController');
-
-
 
 Route::resource('/consulta_expediente', 'detallesController');

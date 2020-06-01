@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-</head>
-
 <body class="hold-transition sidebar-mini">
     <div class="content-wrapper">
         <div class="card card-primary">
@@ -282,5 +274,3 @@
         })
     </script>
 </body>
-
-</html>
