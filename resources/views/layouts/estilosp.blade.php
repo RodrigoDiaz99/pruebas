@@ -93,28 +93,28 @@
                     <div class="mt-5">
                         <i class="fas fa-4x fa-briefcase-medical text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Ginecologia</h3>
-                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem velit sunt cupiditate sapiente alias maiores nulla, ipsa, nesciunt dolores reiciendis accusamus animi eaque, ratione ipsam in doloremque possimus neque.</p>
+                        <p class="text-muted mb-0"></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-laptop-medical text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Papanicolao</h3>
-                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium quia quas animi veniam recusandae neque sit, nihil quis voluptatum aperiam nulla saepe eveniet natus sed impedit? Minima, nostrum blanditiis.</p>
+                        <p class="text-muted mb-0"></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-stethoscope text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Obstétricas</h3>
-                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quam soluta tempore fuga doloremque architecto sint tempora quisquam, aliquam, rem dignissimos molestiae amet in repellendus ex porro magni minima. In?</p>
+                        <p class="text-muted mb-0"></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-heart text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Colposcopia</h3>
-                        <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quia? Incidunt ut molestias debitis tenetur nihil eaque libero ipsam, autem maxime? Tempora provident fuga quia ullam ea minima, nesciunt quaerat!</p>
+                        <p class="text-muted mb-0"></p>
                     </div>
                 </div>
                 <div align="center">
@@ -122,7 +122,7 @@
                         <div class="mt-5">
                             <i class="fas fa-4x fa-file-medical-alt text-primary mb-4"></i>
                             <h3 class="h4 mb-2">Cirugia</h3>
-                            <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quia? Incidunt ut molestias debitis tenetur nihil eaque libero ipsam, autem maxime? Tempora provident fuga quia ullam ea minima, nesciunt quaerat!</p>
+                            <p class="text-muted mb-0"></p>
                         </div>
                     </div>
                 </div>
