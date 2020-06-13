@@ -117,7 +117,7 @@
       });
 
       $.ajax({
-        type: "POST",
+        method: "POST",
         url: "{{ url('/calendario-citas')}}/store",
         data: {
           id_agenda: $('#txtID').val(),
