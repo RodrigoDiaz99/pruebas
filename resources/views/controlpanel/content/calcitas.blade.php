@@ -110,15 +110,10 @@
     });
 
     function saveDB() {
-      $.ajaxSetup({
-        headers: {
-          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-      });
 
       $.ajax({
         type: "POST",
-        url: "{{ url('/calendario-citas/store')}}",
+        url: "{{ url('/calendario-citas')}}/store",
         data: {
           id_agenda: $('#txtID').val(),
           title: $('#txtTitle').val(),
@@ -134,8 +129,6 @@
         },
         error: function(data) {
           alert("failed");
-          console.log(data);
-
         }
       })
     }
