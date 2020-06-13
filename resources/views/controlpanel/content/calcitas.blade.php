@@ -130,7 +130,9 @@
 
         },
         success: function(msg) {
+
           console.log(msg);
+          location.reload();
         },
         error: function(data) {
           alert("failed");
