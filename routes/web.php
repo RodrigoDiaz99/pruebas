@@ -17,9 +17,6 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/registro-paciente', function () {
-    return view('registerp');
-});
 
 Route::get('/pacientes', function () {
     return view('pacientes');
