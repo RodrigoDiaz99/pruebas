@@ -55,7 +55,7 @@ class pacientesController extends Controller
         pacientesModel::insert($datosPaciente);
 
 
-        return redirect()->route('registro-paciente');
+        return redirect()->route('/registro-paciente');
     }
 
     /**
