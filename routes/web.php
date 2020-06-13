@@ -30,6 +30,8 @@ Route::get('/calendario-analisis', function () {
     return view('citas');
 });
 
+Route::post('/calendario-citas/store', 'agendaController@store');
+
 Route::resource('/calendario-citas', 'agendaController');
 
 Route::resource('/registro-paciente', 'pacientesController');
