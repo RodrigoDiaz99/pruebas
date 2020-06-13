@@ -8,7 +8,10 @@ use App\agendaModel;
 
 class agendaController extends Controller
 {
-
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     /**
      * Display a listing of the resource.
@@ -41,7 +44,7 @@ class agendaController extends Controller
      */
     public function store()
     {
-        $data = request();
+        $data = request()->except(['_token', '_method']);
         agendaModel::insert($data);
         print_r($data);
     }
