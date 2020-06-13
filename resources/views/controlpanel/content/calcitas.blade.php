@@ -113,20 +113,21 @@
       $.ajaxSetup({
         headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
+        },
       });
       $.ajax({
+        type: 'post',
         url: "{{ url('/calendario-citas')}}/store",
-        type: "POST",
         data: {
           id_agenda: $('#txtID').val(),
           title: $('#txtTitle').val(),
           description: $('#txtDescription').val(),
           color: $('#txtColor').val(),
           txtColor: '#FFFFFF',
-          start: $('#txtFecha').val() + ' ' + $('#txtHora').val(),
-          end: $('#txtFecha').val() + $('#txtHora').val(),
+          start: $('#txtFecha').val() + " " + $('#txtHora').val(),
+          end: $('#txtFecha').val() + " " + $('#txtHora').val(),
           "_token": $("meta[name='csrf-token']").attr("content"),
+
         },
         success: function(msg) {
           console.log(msg);
@@ -138,4 +139,3 @@
     }
   });
 </script>
-
