@@ -134,6 +134,8 @@
         },
         error: function(data) {
           alert("failed");
+          console.log(data);
+
         }
       })
     }
