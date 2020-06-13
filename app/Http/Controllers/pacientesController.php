@@ -55,7 +55,7 @@ class pacientesController extends Controller
         pacientesModel::insert($datosPaciente);
  
 
-        return view('lista-pacientes');
+        return redirect()->route('lista-pacientes');
 
     }
 
