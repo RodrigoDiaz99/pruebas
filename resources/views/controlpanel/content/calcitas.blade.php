@@ -131,9 +131,9 @@
         success: function(msg) {
           console.log(msg);
         },
-        error: function(data) {
-          alert("failed");
-        }
+        //error: function(data) {
+          //alert("failed");
+        //}
       })
     }
   });
