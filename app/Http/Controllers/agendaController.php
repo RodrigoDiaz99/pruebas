@@ -44,7 +44,7 @@ class agendaController extends Controller
      */
     public function store()
     {
-        $data = request()->except(['_token', '_method']);
+        $data = request();
         agendaModel::insert($data);
         print_r($data);
     }
