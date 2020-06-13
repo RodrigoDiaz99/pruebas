@@ -9,6 +9,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\agendaController;
 
 
 Route::get('/', function () {

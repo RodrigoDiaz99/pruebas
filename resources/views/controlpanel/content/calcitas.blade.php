@@ -3,8 +3,6 @@
   <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/daygrid/main.css') }}">
   <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/list/main.css') }}">
   <link rel="stylesheet" href="{{ asset('plugins/fullCalendar/timegrid/main.css') }}">
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -140,3 +138,4 @@
     }
   });
 </script>
+
