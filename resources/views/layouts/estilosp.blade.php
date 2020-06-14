@@ -42,7 +42,9 @@
                     @if (Route::has('login'))
                     <div class="flex-center position-ref full-height">
                         @auth
-                        <a class="nav-link js-scroll-trigger" href="{{ url('/admin') }}"></a>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('home') }}">Panel de control</a></li>
+                        <a class="nav-link js-scroll-trigger" href="{{ url('/home') }}"></a>
+
                         @else
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('login') }}">Acceso</a></li>
                         @endauth

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\pacientesModel;
 use App\detallesModel;
 use App\categoriaModel;
+use App\antecedentesFModel;
+use App\antecedentesPModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -47,19 +49,14 @@ class aperturaExpController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        $datosPaciente = [
-            'nombre_paciente' => $request->nombre,
-            'apellido_paterno' => $request->app,
-            'apellido_materno' => $request->apm,
-            'edad' => $request->edad
-        ];
+        //Personales
+        $data = request()->except(['_token']);
+        antecedentesPModel::insert($data);
+        print_r($data);
 
 
-        pacientesModel::insert($datosPaciente);
 
-
-        return redirect()->route('registro-paciente');
+        return redirect('lista-pacientes');
     }
 
     /**

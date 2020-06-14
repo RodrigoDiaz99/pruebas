@@ -32,6 +32,8 @@ Route::get('/calendario-analisis', function () {
 });
 
 Route::post('/calendario-citas/store', 'agendaController@store');
+Route::post('/apertura-expediente/store', 'aperturaExpController@store');
+
 
 Route::resource('/calendario-citas', 'agendaController');
 

@@ -5,7 +5,7 @@
                 <h3 class="card-title">Apertura de expediente</h3>
             </div>
             <div class="card-body">
-                <form action="{{route('apertura-expediente.store')}}" method="POST">
+                <form method="POST">
                     @csrf
                     <!-- Main content -->
                     <section class="content">
@@ -30,27 +30,34 @@
                                 <!-- text input -->
                                 <div class="form-group">
                                     <label>Antecedentes</label>
-                                    <input required type="text" value="" class="form-control" placeholder="Antecedentes">
+                                    <input required type="text" id="antecedentes" value="" class="form-control" placeholder="Antecedentes">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <!-- text input -->
                                 <div class="form-group">
                                     <label>Peso</label>
-                                    <input required type="text" value="" class="form-control" placeholder="Peso">
+                                    <input required type="text" id="peso" value="" class="form-control" placeholder="Peso">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>Talla</label>
+                                    <input required type="text" id="talla" value="" class="form-control" placeholder="Talla">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <!-- text input -->
                                 <div class="form-group">
                                     <label>Estatura</label>
-                                    <input required type="text" value="" class="form-control" placeholder="Estatura">
+                                    <input required type="text" id="estatura" value="" class="form-control" placeholder="Estatura">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Categoría</label>
-                                    <select class="form-control" style="width: max-content;">
+                                    <select id="categoria" class="form-control" style="width: max-content;">
                                         <option selected="selected">- Seleccione -</option>
                                         @foreach($categoria as $i)
                                         <option>{{$i->categoria}}</option>
@@ -68,12 +75,12 @@
                                         Diabetes
                                     </label>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioDiabetesSi" name="r1">
+                                        <input type="radio" id="radioDiabetesSi" name="radioDiabetes" value="si">
                                         <label for="radioDiabetesSi"> Sí
                                         </label>
                                     </div>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioDiabetesNo" name="r1" checked>
+                                        <input type="radio" id="radioDiabetesNo" name="radioDiabetes" value="no" checked>
                                         <label for="radioDiabetesNo">No
                                         </label>
                                     </div>
@@ -86,12 +93,12 @@
                                         TB. Pulmonar
                                     </label>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioTBPSi" name="r2">
+                                        <input type="radio" id="radioTBPSi" name="radioTBP" value="si">
                                         <label for="radioTBPSi"> Sí
                                         </label>
                                     </div>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioTBPNo" name="r2" checked>
+                                        <input type="radio" id="radioTBPNo" name="radioTBP" value="no" checked>
                                         <label for="radioTBPNo">No
                                         </label>
                                     </div>
@@ -104,29 +111,49 @@
                                         Inter. Quirúrgica
                                     </label>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioInterQSi" name="r3">
+                                        <input type="radio" id="radioInterQSi" name="radioInterQ" value="si">
                                         <label for="radioInterQSi"> Sí
                                         </label>
                                     </div>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioInterQNo" name="r3" checked>
+                                        <input type="radio" id="radioInterQNo" name="radioInterQ" value="no" checked>
                                         <label for="radioInterQNo">No
                                         </label>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group clearfix">
+                                    <label for="radioTBP">
+                                        Hipertensión
+                                    </label>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioHTSSi" name="radioHTS" value="si">
+                                        <label for="radioHTSSi"> Sí
+                                        </label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="radioHTSNo" name="radioHTS" value="no" checked>
+                                        <label for="radioHTSNo">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </div>
+
                             <div class="col-sm-6">
                                 <div class="form-group clearfix">
                                     <label for="radioPatP">
                                         Patol. Psiquiátrica
                                     </label>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioPatPSi" name="r4">
+                                        <input type="radio" id="radioPatPSi" name="radioPatP" value="si">
                                         <label for="radioPatPSi"> Sí
                                         </label>
                                     </div>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioPatPNo" name="r4" checked>
+                                        <input type="radio" id="radioPatPNo" name="radioPatP" value="no" checked>
                                         <label for="radioPatPNo">No
                                         </label>
                                     </div>
@@ -137,18 +164,18 @@
                                     <label for="radioConvul">
                                         Convulsiones </label>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioConvulSi" name="r5">
+                                        <input type="radio" id="radioConvulSi" name="radioConv" value="si">
                                         <label for="radioConvulSi"> Sí
                                         </label>
                                     </div>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioConvulNo" name="r5" checked>
+                                        <input type="radio" id="radioConvulNo" name="radioConv" value="no" checked>
                                         <label for="radioConvulNo">No
                                         </label>
                                     </div>
                                 </div>
                             </div>
-
+                            <!--
                             <div class="col-sm-6">
                                 <div class="form-group clearfix">
                                     <label for="radioOtro">
@@ -166,29 +193,29 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-sm-6">
                                 <div class="form-group clearfix">
                                     <label for="radioLueticas">
                                         Lueticas
                                     </label>
                                     <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioLueticasSi" name="r7">
+                                        <input type="radio" id="radioLueticasSi" name="radioLueticas" value="si">
                                         <label for="radioLueticasSi"> Sí
-                                        </label>
+                                            </label>
+                                        </div>
+                                        <div class="icheck-primary d-inline">
+                                            <input type="radio" id="radioLueticasNo" name="radioLueticas" value="no" checked>
+                                            <label for="radioLueticasNo">No
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="icheck-primary d-inline">
-                                        <input type="radio" id="radioLueticasNo" name="r7" checked>
-                                        <label for="radioLueticasNo">No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+                                -->
                         </div>
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
-                                <button type=" " class="btn btn-primary">Aperturar expediente</button>
+                                <button id="btnAgregar" type="button" class="btn btn-success">Agregar</button>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -206,11 +233,49 @@
             @yield('footer')
         </footer>
     </div>
-    </div>
-    </div>
+
+
     <!-- /.card -->
     <!-- Page script -->
     <script>
+        $('#btnAgregar').click(function() {
+            saveDB();
+        });
+
+        function saveDB() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+            });
+            $.ajax({
+                type: 'post',
+                url: "{{ url('/apertura-expediente')}}/store",
+                data: {
+                    //Sección Antecedentes Personales
+                    diabetes: $("input[name='radioDiabetes']:checked").val(),
+                    interv_quirurgica: $("input[name='radioInterQ']:checked").val(),
+                    patol_psiquiatrica: $("input[name='radioPatP']:checked").val(),
+                    tbpulmonar: $("input[name='radioTBP']:checked").val(),
+                    hipertencion: $("input[name='radioHTS']:checked").val(),
+                    convulsiones: $("input[name='radioConv']:checked").val(),
+
+                    "_token": $("meta[name='csrf-token']").attr("content"),
+
+                },
+                success: function(msg) {
+
+                    console.log(msg);
+                    location.reload();
+                },
+                error: function(msg) {
+                    console.log(msg);
+
+                    alert("failed");
+                }
+            })
+        }
+
         $(function() {
             //Initialize Select2 Elements
             $('.select2').select2()
