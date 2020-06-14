@@ -51,6 +51,7 @@ class aperturaExpController extends Controller
     {
         //Personales
         $data = request()->except(['_token']);
+        $dataID = request()->only('id_paciente');
         antecedentesPModel::insert($data);
         print_r($data);
 

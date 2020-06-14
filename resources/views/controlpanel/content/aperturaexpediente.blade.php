@@ -14,16 +14,11 @@
                                 <!-- text input -->
                                 <div class="form-group">
 
-                                    <script>
-                                        function myFunction() {
-                                            ids = document.getElementById("name").selectedIndex;
-                                            document.getElementById("ph").value = ids;
-                                        }
-                                    </script>
+
 
                                     <label>Paciente</label>
                                     <input required type="text" id="ph" value="" class="form-control" placeholder="Antecedentes">
-                                    <select id="name" onchange="myFunction()" class="form-control" style="width: max-content;">
+                                    <select id="nombre" onchange="myFunction()" class="form-control" style="width: max-content;">
 
                                         <option selected="selected">- Seleccione -</option>
                                         @foreach($pacientes as $i)
@@ -249,6 +244,16 @@
     <!-- /.card -->
     <!-- Page script -->
     <script>
+        function myFunction() {
+            var ids = document.getElementById("nombre").selectedIndex - 1;
+            var ids2 = {{ json_encode(array_column($pacientes -> toArray(), "id_paciente")) }};
+            document.getElementById("ph").value = ids2[ids];
+            var idOutput = ids2[ids];
+            return  idOutput
+        }
+
+
+
         $('#btnAgregar').click(function() {
             saveDB();
         });
@@ -264,7 +269,7 @@
                 url: "{{ url('/apertura-expediente')}}/store",
                 data: {
                     //Sección Antecedentes Personales
-
+                    id_paciente: myFunction(),
                     diabetes: $("input[name='radioDiabetes']:checked").val(),
                     interv_quirurgica: $("input[name='radioInterQ']:checked").val(),
                     patol_psiquiatrica: $("input[name='radioPatP']:checked").val(),
