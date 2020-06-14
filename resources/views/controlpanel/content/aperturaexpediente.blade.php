@@ -13,12 +13,23 @@
                             <div class="col-sm-6">
                                 <!-- text input -->
                                 <div class="form-group">
+
+                                    <script>
+                                        function myFunction() {
+                                            ids = document.getElementById("name").selectedIndex;
+                                            document.getElementById("ph").value = ids;
+                                        }
+                                    </script>
+
                                     <label>Paciente</label>
-                                    <select class="form-control" style="width: max-content;">
+                                    <input required type="text" id="ph" value="" class="form-control" placeholder="Antecedentes">
+                                    <select id="name" onchange="myFunction()" class="form-control" style="width: max-content;">
+
                                         <option selected="selected">- Seleccione -</option>
                                         @foreach($pacientes as $i)
-                                        <option>{{$i->nombre_paciente}} {{$i->apellido_paterno}} {{$i->apellido_materno}}</option>
+                                        <option>{{$i->id_paciente}} {{$i->nombre_paciente}} {{$i->apellido_paterno}} {{$i->apellido_materno}}</option>
                                         @endforeach
+
                                     </select>
                                 </div>
                             </div>
@@ -30,7 +41,7 @@
                                 <!-- text input -->
                                 <div class="form-group">
                                     <label>Antecedentes</label>
-                                    <input required type="text" id="antecedentes" value="" class="form-control" placeholder="Antecedentes">
+                                    <input required type="text" id="antecedentes" value=" " class="form-control" placeholder="Antecedentes">
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -253,6 +264,7 @@
                 url: "{{ url('/apertura-expediente')}}/store",
                 data: {
                     //Sección Antecedentes Personales
+
                     diabetes: $("input[name='radioDiabetes']:checked").val(),
                     interv_quirurgica: $("input[name='radioInterQ']:checked").val(),
                     patol_psiquiatrica: $("input[name='radioPatP']:checked").val(),
