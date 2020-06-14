@@ -51,7 +51,6 @@ class aperturaExpController extends Controller
     {
         //Personales
         $data = request()->except(['_token']);
-        $dataID = request()->only('id_paciente');
         antecedentesPModel::insert($data);
         print_r($data);
 
@@ -81,6 +80,7 @@ class aperturaExpController extends Controller
     {
         $pacientes = pacientesModel::find($id);
         $expediente = detallesModel::find($id);
+        $antencedentesP = antecedentesPModel::find($id);
 
         return view('detalleexp', compact('pacientes', 'expediente'));
     }

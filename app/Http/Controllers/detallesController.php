@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\categoriaModel;
 use App\pacientesModel;
 use App\detallesModel;
+use App\antecedentesPModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -70,10 +71,12 @@ class detallesController extends Controller
     {
         $pacientes = pacientesModel::find($id);
         $expediente = detallesModel::find($id);
+        $antecedentesP = antecedentesPModel::find($id);
         $categoria = categoriaModel::find($pacientes->id_categoria);
 
 
-        return view('detalleexp', compact('pacientes', 'expediente', 'categoria'));
+
+        return view('detalleexp', compact('pacientes', 'expediente', 'categoria', 'antecedentesP'));
     }
 
     /**

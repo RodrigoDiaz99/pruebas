@@ -74,7 +74,7 @@
                          <div class="col-sm-6">
                              <div class="form-group">
                                  <label>Estatura</label>
-                                 <input disabled type="text" value="1.99m" class="form-control" placeholder="Antecedentes">
+                                 <input disabled type="text" value="{{$antecedentesP->diabetes}}" class="form-control" placeholder="Antecedentes">
                              </div>
                          </div>
                          <div class="col-md-6">

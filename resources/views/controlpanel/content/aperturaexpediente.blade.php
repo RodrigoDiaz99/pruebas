@@ -269,7 +269,7 @@
                 url: "{{ url('/apertura-expediente')}}/store",
                 data: {
                     //Sección Antecedentes Personales
-                    id_paciente: myFunction(),
+                    id_antecedentespersonales: myFunction(),
                     diabetes: $("input[name='radioDiabetes']:checked").val(),
                     interv_quirurgica: $("input[name='radioInterQ']:checked").val(),
                     patol_psiquiatrica: $("input[name='radioPatP']:checked").val(),
