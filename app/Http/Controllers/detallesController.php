@@ -71,7 +71,7 @@ class detallesController extends Controller
     {
         $pacientes = pacientesModel::find($id);
         $expediente = detallesModel::find($id);
-        $antecedentesP = antecedentesPModel::find($id);
+        $antecedentesP = antecedentesPModel::find($pacientes->id_antecedentespersonales);
         $categoria = categoriaModel::find($pacientes->id_categoria);
 
 

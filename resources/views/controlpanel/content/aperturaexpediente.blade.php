@@ -244,16 +244,6 @@
     <!-- /.card -->
     <!-- Page script -->
     <script>
-        function myFunction() {
-            var ids = document.getElementById("nombre").selectedIndex - 1;
-            var ids2 = {{ json_encode(array_column($pacientes -> toArray(), "id_paciente")) }};
-            document.getElementById("ph").value = ids2[ids];
-            var idOutput = ids2[ids];
-            return  idOutput
-        }
-
-
-
         $('#btnAgregar').click(function() {
             saveDB();
         });
@@ -354,5 +344,16 @@
                 $(this).bootstrapSwitch('state', $(this).prop('checked'));
             });
         })
+        
+
+
+
+            function myFunction() {
+            var ids = document.getElementById("nombre").selectedIndex - 1;
+            var ids2 = {{ json_encode(array_column($pacientes -> toArray(), "id_paciente")) }};
+            document.getElementById("ph").value = ids2[ids];
+            var idOutput = ids2[ids];
+            return idOutput
+        }
     </script>
 </body>

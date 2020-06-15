@@ -59,7 +59,7 @@
                                  </select>
                              </div>
                          </div>
-                         <div class="col-sm-6">
+                       <!--  <div class="col-sm-6">
                              <div class="form-group">
                                  <label>Antecedentes</label>
                                  <input disabled type="text" value="Alergias, hipertensión" class="form-control" placeholder="Antecedentes">
@@ -82,8 +82,8 @@
                                  <label>Categoría</label>
                                  <input disabled type="text" class="form-control" value="{{$categoria->categoria}}">
                              </div>
-                         </div>
-                     </div>
+                         </div> -->
+                     </div> 
                      <div class="row">
                          <div class="col-sm-6">
                              <div class="form-group clearfix">
@@ -169,8 +169,8 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="col-sm-6">
-                             <div class="form-group clearfix">
+                          <!--  <div class="col-sm-6">
+                          <div class="form-group clearfix">
                                  <label for="radioOtro">
                                      Otros (Especifíque)
                                  </label>
@@ -184,8 +184,8 @@
                                      <label for="radioOtroNo">No
                                      </label>
                                  </div>
-                             </div>
-                         </div>
+                             </div> 
+                         </div> -->
                          <div class="col-sm-6">
                              <div class="form-group clearfix">
                                  <label for="radioLueticas">
@@ -206,16 +206,16 @@
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <button type=" " class="btn btn-primary">Ver historial</button>
-                             <button type=" " class="btn btn-primary">Ver estudios del paciente</button>
-                             <button type=" " class="btn btn-primary">Ver colposcopías</button>
+                             <button onclick="verificarRadio()" type=" " class="btn btn-primary">Update</button>
+                             <!--  <button type=" " class="btn btn-primary">Ver estudios del paciente</button>
+                             <button type=" " class="btn btn-primary">Ver colposcopías</button>  -->
                          </div>
                      </div>
-                     <div class="col-sm-6">
+                  <!--   <div class="col-sm-6">
                          <div class="form-group">
                              <button type=" " class="btn btn-danger">Cancelar</button>
                          </div>
-                     </div>
+                     </div> -->
              </div>
          </div>
      </div>
@@ -224,6 +224,12 @@
          @yield('footer')
      </footer>
      <script>
+
+function verificarRadio(){
+    var radiotest =  {{ json_encode(array_column($antecedentesP -> toArray(), "hipertencion")) }};
+    }
+
+
          $(function() {
              //Initialize Select2 Elements
              $('.select2').select2()
