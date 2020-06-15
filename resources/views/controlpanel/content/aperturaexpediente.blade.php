@@ -17,12 +17,11 @@
 
 
                                     <label>Paciente</label>
-                                    <input required type="text" id="ph" value="" class="form-control" placeholder="Antecedentes">
-                                    <select id="nombre" onchange="myFunction()" class="form-control" style="width: max-content;">
+                                    <select id="nombre" onchange="getPacienteID()" class="form-control" style="width: max-content;">
 
                                         <option selected="selected">- Seleccione -</option>
                                         @foreach($pacientes as $i)
-                                        <option>{{$i->id_paciente}} {{$i->nombre_paciente}} {{$i->apellido_paterno}} {{$i->apellido_materno}}</option>
+                                        <option>{{$i->nombre_paciente}} {{$i->apellido_paterno}} {{$i->apellido_materno}}</option>
                                         @endforeach
 
                                     </select>
@@ -259,7 +258,7 @@
                 url: "{{ url('/apertura-expediente')}}/store",
                 data: {
                     //Sección Antecedentes Personales
-                    id_antecedentespersonales: myFunction(),
+                    id_antecedentespersonales: getPacienteID(),
                     diabetes: $("input[name='radioDiabetes']:checked").val(),
                     interv_quirurgica: $("input[name='radioInterQ']:checked").val(),
                     patol_psiquiatrica: $("input[name='radioPatP']:checked").val(),
@@ -345,12 +344,11 @@
             });
         })
 
-        function myFunction() {
+        function getPacienteID() {
             var ids = document.getElementById("nombre").selectedIndex - 1;
             var ids2 = {!! json_encode(array_column($pacientes -> toArray(), "id_paciente")) !!};
-            console.log(ids2);
-            document.getElementById("ph").value = ids2[ids];
             var idOutput = ids2[ids];
+            console.log("ID Seleccionado: " + idOutput);
             return idOutput
         }
     </script>
