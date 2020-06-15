@@ -78,11 +78,7 @@ class aperturaExpController extends Controller
      */
     public function edit($id)
     {
-        $pacientes = pacientesModel::find($id);
-        $expediente = detallesModel::find($id);
-        $antencedentesP = antecedentesPModel::find($id);
-
-        return view('detalleexp', compact('pacientes', 'expediente'));
+   
     }
 
     /**

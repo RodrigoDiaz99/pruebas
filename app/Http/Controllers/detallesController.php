@@ -69,7 +69,7 @@ class detallesController extends Controller
      */
     public function edit($id)
     {
-        $pacientes = pacientesModel::find($id);
+        $pacientes = pacientesModel::find($id); 
         $expediente = detallesModel::find($id);
         $antecedentesP = antecedentesPModel::find($pacientes->id_antecedentespersonales);
         $categoria = categoriaModel::find($pacientes->id_categoria);
